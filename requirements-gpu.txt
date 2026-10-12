@@ -1,0 +1,10 @@
+# Optional GPU environment observed during the 2026-10-12 smoke check.
+# Python 3.12.10; separate from the Python 3.10 CPU metric environment.
+cupy-cuda13x==14.1.1
+numpy==2.5.1
+scipy==1.16.3
+cuda-pathfinder==1.5.6
+nvidia-cuda-runtime==13.3.29
+nvidia-cuda-nvrtc==13.3.33
+# Requires a compatible NVIDIA driver. Fresh installation was not tested.
+# Set QEMCMC_METRICS_PYTHON to the pinned CPU environment's interpreter.

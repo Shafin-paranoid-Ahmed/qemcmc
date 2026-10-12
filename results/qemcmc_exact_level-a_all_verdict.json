@@ -1,0 +1,13 @@
+{
+  "gate": "G2",
+  "passed": false,
+  "mean_energy_iat_steps": {
+    "qemcmc": Infinity,
+    "local": Infinity,
+    "uniform": 120.41865628850158,
+    "parallel_tempering": 106.53590052863728
+  },
+  "matched_proposal_steps": 600,
+  "parallel_tempering_is_reported_not_gate_defining": true,
+  "rule": "QeMCMC mean energy IAT must be lower than local and uniform"
+}

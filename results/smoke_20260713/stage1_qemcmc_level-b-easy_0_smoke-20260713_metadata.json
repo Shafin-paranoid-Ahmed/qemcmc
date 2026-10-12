@@ -1,0 +1,31 @@
+{
+  "budget": {
+    "level": "b-easy",
+    "sampler": "qemcmc",
+    "seed": 0,
+    "updates": 2,
+    "chains": 1,
+    "proposal_steps": 1,
+    "tag": "smoke-20260713"
+  },
+  "completed": true,
+  "best_val_exact_nll": 12.22473062247772,
+  "test_metrics": {
+    "accuracy": 0.67,
+    "macro_f1": 0.6228627325934983,
+    "macro_recall": 0.7745901639344263,
+    "ece_15bin": 0.4685785840212632,
+    "brier": 0.696884165149558,
+    "nll": 1.28540478689963,
+    "per_class_recall": {
+      "0": 0.09836065573770492,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "heldout_joint_exact_nll": 12.241636213062643
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_qemcmc_level-b-easy_0_smoke-20260713_history.csv"
+}

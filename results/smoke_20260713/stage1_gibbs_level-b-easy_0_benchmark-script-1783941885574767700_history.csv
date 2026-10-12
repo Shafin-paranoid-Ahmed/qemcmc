@@ -1,0 +1,2 @@
+level,sampler,seed,updates,chains,proposal_steps,tag,update,gradient_error,energy_iat,energy_ess,energy_ess_per_proposal,magnetization_iat,magnetization_ess,magnetization_ess_per_proposal,tv,kl_sample_exact,mode_coverage,train_exact_nll,val_exact_nll,qemcmc_rebuild_seconds,elapsed_seconds
+b-easy,gibbs,0,2,1,32,benchmark-script-1783941885574767700,1,9.975806128374051,8.425883617161142,3.797821267650202,0.11868191461406881,3.758927209287619,8.513067217937573,0.26603335056054916,0.9999212355697791,9.53924580868832,0.0,12.21429499318714,12.215854266547058,0.0,0.4885387999966042

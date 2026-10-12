@@ -1,0 +1,65 @@
+{
+  "gate": "G2",
+  "passed": true,
+  "median_iat_by_spins": {
+    "12": {
+      "qemcmc": {
+        "median_energy_iat_steps": 8.189625367613946,
+        "median_magnetization_iat_steps": 5.881413592867296
+      },
+      "local": {
+        "median_energy_iat_steps": 28.768184041553617,
+        "median_magnetization_iat_steps": 24.093241337342473
+      },
+      "uniform": {
+        "median_energy_iat_steps": 254.2016527012846,
+        "median_magnetization_iat_steps": 438.6558652196679
+      },
+      "parallel_tempering": {
+        "median_energy_iat_steps": 23.455500463671697,
+        "median_magnetization_iat_steps": 46.823650189083125
+      }
+    },
+    "14": {
+      "qemcmc": {
+        "median_energy_iat_steps": 26.846366844395185,
+        "median_magnetization_iat_steps": 8.193026295833695
+      },
+      "local": {
+        "median_energy_iat_steps": 37.88684333447423,
+        "median_magnetization_iat_steps": 37.187661594478456
+      },
+      "uniform": {
+        "median_energy_iat_steps": 639.5197850330219,
+        "median_magnetization_iat_steps": 329.2492565764552
+      },
+      "parallel_tempering": {
+        "median_energy_iat_steps": 40.93807003911202,
+        "median_magnetization_iat_steps": 115.21517306522668
+      }
+    },
+    "16": {
+      "qemcmc": {
+        "median_energy_iat_steps": 20.938337038342638,
+        "median_magnetization_iat_steps": 15.870004161086403
+      },
+      "local": {
+        "median_energy_iat_steps": 33.98033601675598,
+        "median_magnetization_iat_steps": 33.98033601675593
+      },
+      "uniform": {
+        "median_energy_iat_steps": 768.064116260165,
+        "median_magnetization_iat_steps": 517.0170801314194
+      },
+      "parallel_tempering": {
+        "median_energy_iat_steps": 89.18109657081354,
+        "median_magnetization_iat_steps": 118.87278253851278
+      }
+    }
+  },
+  "matched_proposal_steps": 3000,
+  "burn_in": 500,
+  "parallel_tempering_is_reported_not_gate_defining": true,
+  "rule": "per spin count, QeMCMC median energy IAT AND median magnetization IAT must both be lower than local's and uniform's",
+  "metric_amendment": "2026-07-12 reconciliation: censored IAT (was inf), median aggregation (was mean), magnetization observable added"
+}

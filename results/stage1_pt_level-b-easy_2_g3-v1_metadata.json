@@ -1,0 +1,31 @@
+{
+  "budget": {
+    "level": "b-easy",
+    "sampler": "pt",
+    "seed": 2,
+    "updates": 100,
+    "chains": 1,
+    "proposal_steps": 32,
+    "tag": "g3-v1"
+  },
+  "completed": true,
+  "best_val_exact_nll": 6.797768817281223,
+  "test_metrics": {
+    "accuracy": 0.998,
+    "macro_f1": 0.9979155271055393,
+    "macro_recall": 0.9971264367816092,
+    "ece_15bin": 0.22343939070311003,
+    "brier": 0.09559688645346345,
+    "nll": 0.2729730426946379,
+    "per_class_recall": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 0.9885057471264368,
+      "3": 1.0
+    },
+    "heldout_joint_exact_nll": 6.827292234428033
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_pt_level-b-easy_2_g3-v1_history.csv"
+}

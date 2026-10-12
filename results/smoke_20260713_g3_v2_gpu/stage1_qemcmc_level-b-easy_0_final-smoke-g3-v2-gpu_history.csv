@@ -1,0 +1,2 @@
+level,sampler,seed,updates,chains,proposal_steps,tag,backend,bits,bit_width,update,gradient_error,energy_iat,energy_ess,energy_ess_per_proposal,magnetization_iat,magnetization_ess,magnetization_ess_per_proposal,tv,kl_sample_exact,mode_coverage,train_exact_nll,val_exact_nll,qemcmc_rebuild_seconds,elapsed_seconds
+b-easy,qemcmc,0,1,1,1,final-smoke-g3-v2-gpu,gpu,20,20,1,20.50543982239499,1.0,1.0,1.0,1.0,1.0,1.0,0.9999955502948384,15.18023776663459,0.0,15.149682284688373,15.133036736204893,4.831130999999914,5.722105999999258

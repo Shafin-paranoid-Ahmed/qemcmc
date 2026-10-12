@@ -1,0 +1,31 @@
+{
+  "budget": {
+    "level": "b-easy",
+    "sampler": "pt",
+    "seed": 0,
+    "updates": 2,
+    "chains": 1,
+    "proposal_steps": 8,
+    "tag": "smoke-ptfix-20260713"
+  },
+  "completed": true,
+  "best_val_exact_nll": 12.480484981359181,
+  "test_metrics": {
+    "accuracy": 0.646,
+    "macro_f1": 0.590832171855626,
+    "macro_recall": 0.7581967213114754,
+    "ece_15bin": 0.4073555648555036,
+    "brier": 0.697009732214988,
+    "nll": 1.2865904212485328,
+    "per_class_recall": {
+      "0": 0.03278688524590164,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "heldout_joint_exact_nll": 12.482027222306307
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_pt_level-b-easy_0_smoke-ptfix-20260713_history.csv"
+}

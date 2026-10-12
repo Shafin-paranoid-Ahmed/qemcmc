@@ -1,0 +1,31 @@
+{
+  "budget": {
+    "level": "b-easy",
+    "sampler": "mh-uniform",
+    "seed": 0,
+    "updates": 1,
+    "chains": 1,
+    "proposal_steps": 32,
+    "tag": "smoke-fullupdate-20260713"
+  },
+  "completed": true,
+  "best_val_exact_nll": 11.906002907235845,
+  "test_metrics": {
+    "accuracy": 0.97,
+    "macro_f1": 0.9405466379343409,
+    "macro_recall": 0.9184782608695652,
+    "ece_15bin": 0.6895669805572426,
+    "brier": 0.6913364842233782,
+    "nll": 1.2731888904900206,
+    "per_class_recall": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 0.6739130434782609
+    },
+    "heldout_joint_exact_nll": 11.917822412533875
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_mh-uniform_level-b-easy_0_smoke-fullupdate-20260713_history.csv"
+}

@@ -1,0 +1,3 @@
+level,sampler,seed,updates,chains,proposal_steps,tag,update,gradient_error,energy_iat,energy_ess,energy_ess_per_proposal,magnetization_iat,magnetization_ess,magnetization_ess_per_proposal,tv,kl_sample_exact,mode_coverage,train_exact_nll,val_exact_nll,qemcmc_rebuild_seconds,elapsed_seconds
+b-easy,mh-uniform,0,2,1,1,smoke-metrics-20260713,1,16.51096330890314,1.0,1.0,1.0,1.0,1.0,1.0,0.9999957849151916,12.441042981791883,0.0,12.323521104177813,12.322970393005736,0.0,0.5270567999978084
+b-easy,mh-uniform,0,2,1,1,smoke-metrics-20260713,2,16.514351121714384,1.0,1.0,1.0,1.0,1.0,1.0,0.9999957316635224,12.427661517451966,0.0,12.055693403998891,12.060043598869573,0.0,1.049754200008465

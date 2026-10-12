@@ -1,0 +1,39 @@
+{
+  "budget": {
+    "level": "c",
+    "sampler": "exact",
+    "seed": 1,
+    "updates": 100,
+    "chains": 1,
+    "proposal_steps": 32,
+    "tag": "ladder22-v1-gpu",
+    "backend": "gpu",
+    "bits": 22,
+    "sampler_variant": "exact",
+    "reward_signal": "none",
+    "persistence": false
+  },
+  "backend": "gpu",
+  "bit_width": 22,
+  "completed": true,
+  "best_val_exact_nll": 15.973712927715273,
+  "test_metrics": {
+    "accuracy": 0.7047353760445683,
+    "macro_f1": 0.5126613684822641,
+    "macro_recall": 0.524997540496117,
+    "ece_15bin": 0.07548836031607614,
+    "brier": 0.4146495895078601,
+    "nll": 0.8124484886441521,
+    "per_class_recall": {
+      "0": 0.8389830508474576,
+      "1": 0.3939393939393939,
+      "2": 0.3103448275862069,
+      "3": 0.5483870967741935,
+      "4": 0.5333333333333333
+    },
+    "heldout_joint_exact_nll": 15.771685138765028
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_exact_level-c_1_ladder22-v1-gpu_history.csv"
+}

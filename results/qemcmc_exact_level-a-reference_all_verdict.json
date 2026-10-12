@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "reference": "Layden Supplement Eq. S26",
+  "temperature": 0.1,
+  "mean_energy_iat_steps": {
+    "local": Infinity,
+    "uniform": 168.05449655378536,
+    "qemcmc": 21.367495636108327
+  },
+  "rule": "qualitative published-instance reproduction: QeMCMC IAT below local and uniform"
+}

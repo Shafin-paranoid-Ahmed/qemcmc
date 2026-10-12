@@ -1,0 +1,2 @@
+level,sampler,seed,updates,chains,proposal_steps,tag,update,gradient_error,energy_iat,energy_ess,energy_ess_per_proposal,magnetization_iat,magnetization_ess,magnetization_ess_per_proposal,tv,kl_sample_exact,mode_coverage,train_exact_nll,val_exact_nll,qemcmc_rebuild_seconds,elapsed_seconds
+b-easy,pt,0,1,1,32,smoke-fullupdate-20260713,1,8.957823463018228,3.630678009272168,8.813780764440455,0.27543064888876423,2.660354422539028,12.028472495578002,0.3758897654868126,0.9999778375579194,10.86717334766056,0.0,12.165948050767758,12.154457339540949,0.0,0.5023702999897068

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "acceptance_rule": "TV distance <= 1e-8 for every planted 20-spin case",
+  "tv_limit": 1e-08,
+  "comparison_count": 6,
+  "passed": true,
+  "worst_case": {
+    "case": "planted-n20-seed0-case0",
+    "seed": 0,
+    "state_index": 798405,
+    "evolution_time": 2.0,
+    "gamma": 0.25,
+    "tv_distance": 1.8056638825448342e-13,
+    "passed": true,
+    "scipy_seconds": 44.179157399999895,
+    "gpu_seconds": 1.8747237000006862
+  },
+  "elapsed_seconds": 202.3206947000008,
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "cupy_version": "14.1.1",
+  "rows": [
+    {
+      "case": "planted-n20-seed0-case0",
+      "seed": 0,
+      "state_index": 798405,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 1.8056638825448342e-13,
+      "passed": true,
+      "scipy_seconds": 44.179157399999895,
+      "gpu_seconds": 1.8747237000006862
+    },
+    {
+      "case": "planted-n20-seed0-case1",
+      "seed": 0,
+      "state_index": 552378,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 9.299159385277819e-14,
+      "passed": true,
+      "scipy_seconds": 43.516854099999364,
+      "gpu_seconds": 0.05399129999932484
+    },
+    {
+      "case": "planted-n20-seed1-case0",
+      "seed": 1,
+      "state_index": 713997,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 1.2562209099313376e-13,
+      "passed": true,
+      "scipy_seconds": 42.48566419999952,
+      "gpu_seconds": 0.05012030000034429
+    },
+    {
+      "case": "planted-n20-seed1-case1",
+      "seed": 1,
+      "state_index": 72549,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 1.4142089579403643e-13,
+      "passed": true,
+      "scipy_seconds": 17.854066099999727,
+      "gpu_seconds": 0.15719150000040827
+    },
+    {
+      "case": "planted-n20-seed2-case0",
+      "seed": 2,
+      "state_index": 514389,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 8.196681002570745e-14,
+      "passed": true,
+      "scipy_seconds": 17.254756799999996,
+      "gpu_seconds": 0.24425909999990836
+    },
+    {
+      "case": "planted-n20-seed2-case1",
+      "seed": 2,
+      "state_index": 822252,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 9.583142492572369e-14,
+      "passed": true,
+      "scipy_seconds": 17.263425399999505,
+      "gpu_seconds": 0.04352099999960046
+    }
+  ]
+}

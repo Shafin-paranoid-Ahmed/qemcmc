@@ -1,0 +1,3 @@
+level,sampler,seed,updates,chains,proposal_steps,tag,update,gradient_error,energy_iat,energy_ess_per_proposal,magnetization_iat,tv,kl_sample_exact,mode_coverage,val_exact_nll,qemcmc_rebuild_seconds,elapsed_seconds
+b-easy,pcd,0,2,1,1,smoke-20260713,1,16.525552437877366,1.0,1.0,1.0,0.9999962378858934,12.562748297683372,0.0,12.307933584710273,0.0,0.7317176999931689
+b-easy,pcd,0,2,1,1,smoke-20260713,2,16.628308081920704,1.0,1.0,1.0,0.9999980677697831,13.302626946552987,0.0,12.180014786991046,0.0,1.4885312999977032

@@ -1,0 +1,276 @@
+{
+  "gate": "G6a",
+  "bits": 22,
+  "timestamp": "20260715T191829",
+  "gpu_name": "NVIDIA GeForce RTX 5070",
+  "cuda_device_id": 0,
+  "code_file_tag": "stage1-22bit-ladder22-v1-gpu",
+  "fixed_tolerances": {
+    "tv_exclusive": 1e-10,
+    "state_norm_drift_exclusive": 1e-12,
+    "peak_vram_fraction_exclusive": 0.8
+  },
+  "training_smoke": {
+    "level": "c",
+    "sampler": "qemcmc",
+    "seed": 0,
+    "registered_budget": {
+      "updates": 100,
+      "chains": 1,
+      "proposal_steps": 32
+    },
+    "completed_smoke_updates": 3,
+    "requested_smoke_updates": 3,
+    "run_artifact_tag": "g6-22bit-20260715T191829-smoke",
+    "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_qemcmc_level-c_0_g6-22bit-20260715T191829-smoke_history.csv",
+    "per_update_seconds": [
+      64.08573590000015,
+      59.39254380000057,
+      62.530326300000524
+    ],
+    "max_update_seconds": 64.08573590000015,
+    "wall_time_ceiling_seconds": 120.0,
+    "wall_time_passed": true,
+    "total_bytes": 12820480000,
+    "baseline_used_bytes": 1248395264,
+    "peak_used_bytes": 3601399808,
+    "peak_vram_fraction": 0.28090990415335465,
+    "vram_fraction_limit_exclusive": 0.8,
+    "vram_passed": true,
+    "three_update_smoke_passed": true
+  },
+  "numerical_checks": {
+    "draws": [
+      {
+        "draw": 0,
+        "evolution_time": 19.577316557324806,
+        "gamma": 0.4473558862992824,
+        "state_index": 3286718,
+        "degree_d": 539,
+        "degree_2d": 1078,
+        "tv_d_vs_2d": 1.8895068434857817e-13,
+        "norm_drift_d": 7.771561172376096e-16,
+        "norm_drift_2d": 1.5543122344752192e-15
+      },
+      {
+        "draw": 1,
+        "evolution_time": 8.23664052426533,
+        "gamma": 0.4560418493931364,
+        "state_index": 586321,
+        "degree_d": 250,
+        "degree_2d": 500,
+        "tv_d_vs_2d": 1.324544403542813e-13,
+        "norm_drift_d": 2.220446049250313e-16,
+        "norm_drift_2d": 2.220446049250313e-16
+      },
+      {
+        "draw": 2,
+        "evolution_time": 17.643720717847906,
+        "gamma": 0.33616018185665686,
+        "state_index": 1354159,
+        "degree_d": 498,
+        "degree_2d": 996,
+        "tv_d_vs_2d": 1.5649866822264932e-13,
+        "norm_drift_d": 3.885780586188048e-15,
+        "norm_drift_2d": 3.885780586188048e-15
+      },
+      {
+        "draw": 3,
+        "evolution_time": 15.326868456708855,
+        "gamma": 0.26048469511703637,
+        "state_index": 2014464,
+        "degree_d": 442,
+        "degree_2d": 884,
+        "tv_d_vs_2d": 2.4539554559674155e-13,
+        "norm_drift_d": 2.475797344914099e-14,
+        "norm_drift_2d": 1.4432899320127035e-15
+      },
+      {
+        "draw": 4,
+        "evolution_time": 10.91966367071629,
+        "gamma": 0.5976325992352756,
+        "state_index": 3861652,
+        "degree_d": 313,
+        "degree_2d": 626,
+        "tv_d_vs_2d": 1.8240677003433208e-13,
+        "norm_drift_d": 2.9976021664879227e-15,
+        "norm_drift_2d": 2.886579864025407e-15
+      },
+      {
+        "draw": 5,
+        "evolution_time": 4.809121782960979,
+        "gamma": 0.567499078766572,
+        "state_index": 3772687,
+        "degree_d": 157,
+        "degree_2d": 314,
+        "tv_d_vs_2d": 1.5364662716647877e-13,
+        "norm_drift_d": 0.0,
+        "norm_drift_2d": 3.3306690738754696e-16
+      },
+      {
+        "draw": 6,
+        "evolution_time": 11.560811546410545,
+        "gamma": 0.2881400954612797,
+        "state_index": 2865822,
+        "degree_d": 343,
+        "degree_2d": 686,
+        "tv_d_vs_2d": 1.4876616095332683e-13,
+        "norm_drift_d": 2.375877272697835e-14,
+        "norm_drift_2d": 8.881784197001252e-16
+      },
+      {
+        "draw": 7,
+        "evolution_time": 2.83092623398261,
+        "gamma": 0.47482166552516225,
+        "state_index": 2786640,
+        "degree_d": 105,
+        "degree_2d": 210,
+        "tv_d_vs_2d": 8.601869937450361e-14,
+        "norm_drift_d": 5.218048215738236e-15,
+        "norm_drift_2d": 7.327471962526033e-15
+      },
+      {
+        "draw": 8,
+        "evolution_time": 3.5635319509635117,
+        "gamma": 0.42196746386412,
+        "state_index": 3202363,
+        "degree_d": 126,
+        "degree_2d": 252,
+        "tv_d_vs_2d": 1.1323364951949183e-13,
+        "norm_drift_d": 1.3322676295501878e-15,
+        "norm_drift_2d": 1.1102230246251565e-15
+      },
+      {
+        "draw": 9,
+        "evolution_time": 16.534992311156596,
+        "gamma": 0.5199185705434386,
+        "state_index": 3927141,
+        "degree_d": 458,
+        "degree_2d": 916,
+        "tv_d_vs_2d": 1.6607451925427508e-13,
+        "norm_drift_d": 8.881784197001252e-16,
+        "norm_drift_2d": 7.771561172376096e-16
+      },
+      {
+        "draw": 10,
+        "evolution_time": 10.819281435707696,
+        "gamma": 0.5937883670962418,
+        "state_index": 3501751,
+        "degree_d": 311,
+        "degree_2d": 622,
+        "tv_d_vs_2d": 1.3876437875121733e-13,
+        "norm_drift_d": 1.5543122344752192e-15,
+        "norm_drift_2d": 1.5543122344752192e-15
+      },
+      {
+        "draw": 11,
+        "evolution_time": 17.118520588928913,
+        "gamma": 0.32384922309169717,
+        "state_index": 461748,
+        "degree_d": 485,
+        "degree_2d": 970,
+        "tv_d_vs_2d": 1.7253713663673384e-13,
+        "norm_drift_d": 8.881784197001252e-15,
+        "norm_drift_2d": 6.661338147750939e-15
+      },
+      {
+        "draw": 12,
+        "evolution_time": 8.48375879827064,
+        "gamma": 0.37774523645483504,
+        "state_index": 2541307,
+        "degree_d": 259,
+        "degree_2d": 518,
+        "tv_d_vs_2d": 1.3128933184160873e-13,
+        "norm_drift_d": 2.220446049250313e-15,
+        "norm_drift_2d": 1.9984014443252818e-15
+      },
+      {
+        "draw": 13,
+        "evolution_time": 12.34348754389535,
+        "gamma": 0.3725033468588362,
+        "state_index": 392911,
+        "degree_d": 359,
+        "degree_2d": 718,
+        "tv_d_vs_2d": 2.1629319469727756e-13,
+        "norm_drift_d": 9.547918011776346e-15,
+        "norm_drift_2d": 2.220446049250313e-15
+      },
+      {
+        "draw": 14,
+        "evolution_time": 13.086470697756244,
+        "gamma": 0.2527224771234236,
+        "state_index": 4143926,
+        "degree_d": 384,
+        "degree_2d": 768,
+        "tv_d_vs_2d": 2.396996017822332e-13,
+        "norm_drift_d": 4.729550084903167e-14,
+        "norm_drift_2d": 4.773959005888173e-15
+      },
+      {
+        "draw": 15,
+        "evolution_time": 10.279452907703062,
+        "gamma": 0.36300011060126475,
+        "state_index": 2400061,
+        "degree_d": 306,
+        "degree_2d": 612,
+        "tv_d_vs_2d": 1.9574217468875923e-13,
+        "norm_drift_d": 6.994405055138486e-15,
+        "norm_drift_2d": 2.6645352591003757e-15
+      },
+      {
+        "draw": 16,
+        "evolution_time": 4.880062625543941,
+        "gamma": 0.41403590178814687,
+        "state_index": 1430819,
+        "degree_d": 162,
+        "degree_2d": 324,
+        "tv_d_vs_2d": 1.384542418939018e-13,
+        "norm_drift_d": 5.329070518200751e-15,
+        "norm_drift_2d": 8.881784197001252e-16
+      },
+      {
+        "draw": 17,
+        "evolution_time": 15.485427054321576,
+        "gamma": 0.36109095180310696,
+        "state_index": 920516,
+        "degree_d": 441,
+        "degree_2d": 882,
+        "tv_d_vs_2d": 1.6269633399788153e-13,
+        "norm_drift_d": 2.3314683517128287e-15,
+        "norm_drift_2d": 1.9984014443252818e-15
+      },
+      {
+        "draw": 18,
+        "evolution_time": 19.11023144671316,
+        "gamma": 0.4956243437258897,
+        "state_index": 1308321,
+        "degree_d": 524,
+        "degree_2d": 1048,
+        "tv_d_vs_2d": 1.6923846634535957e-13,
+        "norm_drift_d": 8.881784197001252e-16,
+        "norm_drift_2d": 8.881784197001252e-16
+      },
+      {
+        "draw": 19,
+        "evolution_time": 8.42039244320577,
+        "gamma": 0.312694671447635,
+        "state_index": 1682599,
+        "degree_d": 259,
+        "degree_2d": 518,
+        "tv_d_vs_2d": 1.8419300949822004e-13,
+        "norm_drift_d": 2.0872192862952943e-14,
+        "norm_drift_2d": 4.440892098500626e-15
+      }
+    ],
+    "draw_count": 20,
+    "max_tv_d_vs_2d": 2.4539554559674155e-13,
+    "tv_limit_exclusive": 1e-10,
+    "chebyshev_degree_doubling_passed": true,
+    "max_state_norm_drift": 4.729550084903167e-14,
+    "norm_drift_limit_exclusive": 1e-12,
+    "state_norm_passed": true
+  },
+  "gpu_identity_required": null,
+  "gpu_identity_passed": true,
+  "passed": true
+}

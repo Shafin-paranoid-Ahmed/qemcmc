@@ -1,0 +1,31 @@
+{
+  "budget": {
+    "level": "b-easy",
+    "sampler": "gibbs",
+    "seed": 0,
+    "updates": 1,
+    "chains": 1,
+    "proposal_steps": 2,
+    "tag": "smoke-finalrecover-20260713"
+  },
+  "completed": true,
+  "best_val_exact_nll": 12.614803523634004,
+  "test_metrics": {
+    "accuracy": 0.322,
+    "macro_f1": 0.28511124595519105,
+    "macro_recall": 0.5015923566878981,
+    "ece_15bin": 0.3195844259717274,
+    "brier": 0.7463040451575648,
+    "nll": 1.3798519981003015,
+    "per_class_recall": {
+      "0": 0.0,
+      "1": 0.006369426751592357,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "heldout_joint_exact_nll": 12.633863027044901
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_gibbs_level-b-easy_0_smoke-finalrecover-20260713_history.csv"
+}

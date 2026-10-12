@@ -1,0 +1,31 @@
+{
+  "budget": {
+    "level": "b-easy",
+    "sampler": "exact",
+    "seed": 0,
+    "updates": 2,
+    "chains": 1,
+    "proposal_steps": 1,
+    "tag": "smoke-metrics-20260713"
+  },
+  "completed": true,
+  "best_val_exact_nll": 11.283155643000446,
+  "test_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "macro_recall": 1.0,
+    "ece_15bin": 0.6904284570915736,
+    "brier": 0.6362199718572146,
+    "nll": 1.173081114232093,
+    "per_class_recall": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "heldout_joint_exact_nll": 11.28374041251297
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_exact_level-b-easy_0_smoke-metrics-20260713_history.csv"
+}

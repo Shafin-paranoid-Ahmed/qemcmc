@@ -1,0 +1,38 @@
+{
+  "budget": {
+    "level": "a",
+    "sampler": "adaptive-qemcmc-proxy",
+    "seed": 1,
+    "updates": 100,
+    "chains": 1,
+    "proposal_steps": 32,
+    "tag": "stage2-v1-gpu",
+    "backend": "gpu",
+    "bits": 20,
+    "sampler_variant": "adaptive-qemcmc-proxy",
+    "reward_signal": "proxy",
+    "persistence": false
+  },
+  "backend": "gpu",
+  "bit_width": 20,
+  "completed": true,
+  "best_val_exact_nll": 3.331432138754118,
+  "test_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "macro_recall": 1.0,
+    "ece_15bin": 0.1875594836199398,
+    "brier": 0.04997344698687576,
+    "nll": 0.2094517662693071,
+    "per_class_recall": {
+      "0": 1.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0
+    },
+    "heldout_joint_exact_nll": 3.159938833954379
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_adaptive-qemcmc-proxy_level-a_1_stage2-v1-gpu_history.csv"
+}

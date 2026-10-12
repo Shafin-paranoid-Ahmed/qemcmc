@@ -1,0 +1,11 @@
+{
+  "gate": "G1",
+  "passed": true,
+  "mean_ebm_macro_f1": 0.41383207289359536,
+  "mean_best_simple_macro_f1": 0.46825918688373513,
+  "macro_f1_gap_threshold": 0.1,
+  "seeds_with_at_least_five_modes": 3,
+  "required_seeds_with_at_least_five_modes": 2,
+  "rule": "pass iff shared EBM mean validation Macro-F1 is within 0.10 of best simple mean and >=5 modes occur on >=2/3 seeds",
+  "threshold_provenance": "2026-07-12 reconciliation after Stage-0 diagnostics; operational only"
+}

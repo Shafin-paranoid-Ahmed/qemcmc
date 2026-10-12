@@ -1,0 +1,15 @@
+{
+  "seed": 0,
+  "bits": 20,
+  "val_macro_f1": 0.4626039217983875,
+  "val_accuracy": 0.5921787709497207,
+  "majority_accuracy": 0.6564245810055865,
+  "pca_explained_variance": 0.6402742862701416,
+  "encoder": "ResNet18_Weights.IMAGENET1K_V1",
+  "threshold": "train-centered PCA zero",
+  "encoder_frozen": true,
+  "source_artifact": "codes_frozenresnet_level-c_0_codes.csv",
+  "retagged_exact_copy": true,
+  "pca_fit_partition": "trusted train partition in source build",
+  "trusted_split_membership_validated": true
+}

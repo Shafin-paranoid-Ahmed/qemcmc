@@ -1,0 +1,34 @@
+{
+  "budget": {
+    "level": "b-easy",
+    "sampler": "qemcmc",
+    "seed": 0,
+    "updates": 1,
+    "chains": 1,
+    "proposal_steps": 1,
+    "tag": "smoke-g3-v2-gpu-20bit",
+    "backend": "gpu"
+  },
+  "backend": "gpu",
+  "bit_width": 20,
+  "completed": true,
+  "best_val_exact_nll": 15.133036736204893,
+  "test_metrics": {
+    "accuracy": 0.694,
+    "macro_f1": 0.5851751580500323,
+    "macro_recall": 0.7563694267515924,
+    "ece_15bin": 0.5598866239729821,
+    "brier": 0.7004748763386573,
+    "nll": 1.2910922833634777,
+    "per_class_recall": {
+      "0": 1.0,
+      "1": 0.025477707006369428,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "heldout_joint_exact_nll": 15.147500384293162
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_qemcmc_level-b-easy_0_smoke-g3-v2-gpu-20bit_history.csv"
+}

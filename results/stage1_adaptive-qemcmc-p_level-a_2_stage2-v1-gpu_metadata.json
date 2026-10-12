@@ -1,0 +1,37 @@
+{
+  "budget": {
+    "level": "a",
+    "sampler": "adaptive-qemcmc-p",
+    "seed": 2,
+    "updates": 100,
+    "chains": 1,
+    "proposal_steps": 32,
+    "tag": "stage2-v1-gpu",
+    "backend": "gpu",
+    "bits": 20,
+    "sampler_variant": "adaptive-qemcmc-p",
+    "reward_signal": "exact",
+    "persistence": true
+  },
+  "backend": "gpu",
+  "bit_width": 20,
+  "completed": true,
+  "best_val_exact_nll": 1.3637543608730816,
+  "test_metrics": {
+    "accuracy": 0.992,
+    "macro_f1": 0.4979919678714859,
+    "macro_recall": 0.5,
+    "ece_15bin": 0.002918264236519766,
+    "brier": 0.015107751872080083,
+    "nll": 0.03767343869938654,
+    "per_class_recall": {
+      "0": 1.0,
+      "1": 0.0,
+      "2": 0.0
+    },
+    "heldout_joint_exact_nll": 1.5303294760013073
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_adaptive-qemcmc-p_level-a_2_stage2-v1-gpu_history.csv"
+}

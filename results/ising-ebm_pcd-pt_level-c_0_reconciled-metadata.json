@@ -1,0 +1,20 @@
+{
+  "replicas": 6,
+  "temperatures": [
+    1.0,
+    1.3195079107728942,
+    1.7411011265922482,
+    2.29739670999407,
+    3.0314331330207964,
+    4.0
+  ],
+  "local_steps_per_epoch": 64512,
+  "swap_attempts_per_epoch": 2560,
+  "seed": 0,
+  "mode_count": 25,
+  "top_mode_mass": 8.47162678592399e-06,
+  "median_single_flip_exit_barrier": 0.014930752096546485,
+  "max_single_flip_exit_barrier": 0.11902857327788752,
+  "train_seconds": 19.91056230000686,
+  "shared_energy_model": true
+}

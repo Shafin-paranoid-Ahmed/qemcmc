@@ -1,0 +1,7 @@
+{
+  "spins": 12,
+  "loop_seconds_per_proposal": 0.044933600000149454,
+  "broadcast_seconds_per_proposal": null,
+  "broadcast_supported_and_validated": false,
+  "committed_path": "loop"
+}

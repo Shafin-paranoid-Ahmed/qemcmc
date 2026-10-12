@@ -1,0 +1,39 @@
+{
+  "budget": {
+    "level": "c",
+    "sampler": "qemcmc-p",
+    "seed": 1,
+    "updates": 100,
+    "chains": 1,
+    "proposal_steps": 32,
+    "tag": "ladder22-v1-gpu",
+    "backend": "gpu",
+    "bits": 22,
+    "sampler_variant": "qemcmc-p",
+    "reward_signal": "none",
+    "persistence": true
+  },
+  "backend": "gpu",
+  "bit_width": 22,
+  "completed": true,
+  "best_val_exact_nll": 16.241421556503155,
+  "test_metrics": {
+    "accuracy": 0.6963788300835655,
+    "macro_f1": 0.4353950408826764,
+    "macro_recall": 0.42966467335446057,
+    "ece_15bin": 0.16565088003036618,
+    "brier": 0.4508343340552996,
+    "nll": 0.9064649438314444,
+    "per_class_recall": {
+      "0": 0.8940677966101694,
+      "1": 0.36363636363636365,
+      "2": 0.13793103448275862,
+      "3": 0.41935483870967744,
+      "4": 0.3333333333333333
+    },
+    "heldout_joint_exact_nll": 16.08386602053877
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_qemcmc-p_level-c_1_ladder22-v1-gpu_history.csv"
+}

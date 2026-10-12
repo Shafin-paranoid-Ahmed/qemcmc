@@ -1,0 +1,926 @@
+{
+  "schema_version": 1,
+  "acceptance_rule": "TV distance <= 1e-8 for every case/grid point",
+  "tv_limit": 1e-08,
+  "grid_points_per_instance": 9,
+  "instance_count": 10,
+  "comparison_count": 90,
+  "passed": true,
+  "worst_case": {
+    "case": "planted-n16-seed0",
+    "n_spins": 16,
+    "state_index": 15825,
+    "evolution_time": 2.0,
+    "gamma": 0.425,
+    "tv_distance": 2.5012904976732973e-13,
+    "passed": true,
+    "elapsed_seconds": 0.8154523999983212
+  },
+  "elapsed_seconds": 142.86526029999368,
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "cupy_version": "14.1.1",
+  "cuda_runtime_version": 13020,
+  "driver_version": 13030,
+  "rows": [
+    {
+      "case": "layden-reference-n10",
+      "n_spins": 10,
+      "state_index": 613,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 8.713217672679718e-14,
+      "passed": true,
+      "elapsed_seconds": 0.17513960000360385
+    },
+    {
+      "case": "layden-reference-n10",
+      "n_spins": 10,
+      "state_index": 613,
+      "evolution_time": 2.0,
+      "gamma": 0.425,
+      "tv_distance": 1.1767432360518882e-13,
+      "passed": true,
+      "elapsed_seconds": 0.013828199997078627
+    },
+    {
+      "case": "layden-reference-n10",
+      "n_spins": 10,
+      "state_index": 613,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 1.921381615226354e-13,
+      "passed": true,
+      "elapsed_seconds": 0.014261800009990111
+    },
+    {
+      "case": "layden-reference-n10",
+      "n_spins": 10,
+      "state_index": 613,
+      "evolution_time": 11.0,
+      "gamma": 0.25,
+      "tv_distance": 1.056813168329687e-13,
+      "passed": true,
+      "elapsed_seconds": 0.061948199989274144
+    },
+    {
+      "case": "layden-reference-n10",
+      "n_spins": 10,
+      "state_index": 613,
+      "evolution_time": 11.0,
+      "gamma": 0.425,
+      "tv_distance": 2.413971483850245e-13,
+      "passed": true,
+      "elapsed_seconds": 0.0528615999937756
+    },
+    {
+      "case": "layden-reference-n10",
+      "n_spins": 10,
+      "state_index": 613,
+      "evolution_time": 11.0,
+      "gamma": 0.6,
+      "tv_distance": 1.5116403123084443e-13,
+      "passed": true,
+      "elapsed_seconds": 0.052392300000065006
+    },
+    {
+      "case": "layden-reference-n10",
+      "n_spins": 10,
+      "state_index": 613,
+      "evolution_time": 20.0,
+      "gamma": 0.25,
+      "tv_distance": 1.1465490665242774e-13,
+      "passed": true,
+      "elapsed_seconds": 0.08062649999919813
+    },
+    {
+      "case": "layden-reference-n10",
+      "n_spins": 10,
+      "state_index": 613,
+      "evolution_time": 20.0,
+      "gamma": 0.425,
+      "tv_distance": 1.9625797873655482e-13,
+      "passed": true,
+      "elapsed_seconds": 0.09311909999814816
+    },
+    {
+      "case": "layden-reference-n10",
+      "n_spins": 10,
+      "state_index": 613,
+      "evolution_time": 20.0,
+      "gamma": 0.6,
+      "tv_distance": 1.440293610665911e-13,
+      "passed": true,
+      "elapsed_seconds": 0.07786569999007042
+    },
+    {
+      "case": "planted-n12-seed0",
+      "n_spins": 12,
+      "state_index": 2630,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 1.549259884884527e-13,
+      "passed": true,
+      "elapsed_seconds": 0.02200019999872893
+    },
+    {
+      "case": "planted-n12-seed0",
+      "n_spins": 12,
+      "state_index": 2630,
+      "evolution_time": 2.0,
+      "gamma": 0.425,
+      "tv_distance": 1.4485856972417403e-13,
+      "passed": true,
+      "elapsed_seconds": 0.0230854000110412
+    },
+    {
+      "case": "planted-n12-seed0",
+      "n_spins": 12,
+      "state_index": 2630,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 9.677383510742935e-14,
+      "passed": true,
+      "elapsed_seconds": 0.021152500004973263
+    },
+    {
+      "case": "planted-n12-seed0",
+      "n_spins": 12,
+      "state_index": 2630,
+      "evolution_time": 11.0,
+      "gamma": 0.25,
+      "tv_distance": 1.644706322672736e-13,
+      "passed": true,
+      "elapsed_seconds": 0.1517658999946434
+    },
+    {
+      "case": "planted-n12-seed0",
+      "n_spins": 12,
+      "state_index": 2630,
+      "evolution_time": 11.0,
+      "gamma": 0.425,
+      "tv_distance": 2.1539326842982498e-13,
+      "passed": true,
+      "elapsed_seconds": 0.15996439999435097
+    },
+    {
+      "case": "planted-n12-seed0",
+      "n_spins": 12,
+      "state_index": 2630,
+      "evolution_time": 11.0,
+      "gamma": 0.6,
+      "tv_distance": 1.1775753363045908e-13,
+      "passed": true,
+      "elapsed_seconds": 0.16818200000852812
+    },
+    {
+      "case": "planted-n12-seed0",
+      "n_spins": 12,
+      "state_index": 2630,
+      "evolution_time": 20.0,
+      "gamma": 0.25,
+      "tv_distance": 2.079861606187316e-13,
+      "passed": true,
+      "elapsed_seconds": 0.2786433000001125
+    },
+    {
+      "case": "planted-n12-seed0",
+      "n_spins": 12,
+      "state_index": 2630,
+      "evolution_time": 20.0,
+      "gamma": 0.425,
+      "tv_distance": 1.856691115353558e-13,
+      "passed": true,
+      "elapsed_seconds": 0.2981124999932945
+    },
+    {
+      "case": "planted-n12-seed0",
+      "n_spins": 12,
+      "state_index": 2630,
+      "evolution_time": 20.0,
+      "gamma": 0.6,
+      "tv_distance": 1.582793676960231e-13,
+      "passed": true,
+      "elapsed_seconds": 0.2196548000065377
+    },
+    {
+      "case": "planted-n12-seed1",
+      "n_spins": 12,
+      "state_index": 1588,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 1.9348596847742244e-13,
+      "passed": true,
+      "elapsed_seconds": 0.025335099999210797
+    },
+    {
+      "case": "planted-n12-seed1",
+      "n_spins": 12,
+      "state_index": 1588,
+      "evolution_time": 2.0,
+      "gamma": 0.425,
+      "tv_distance": 1.3773665750182645e-13,
+      "passed": true,
+      "elapsed_seconds": 0.02746129999286495
+    },
+    {
+      "case": "planted-n12-seed1",
+      "n_spins": 12,
+      "state_index": 1588,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 9.469263842548402e-14,
+      "passed": true,
+      "elapsed_seconds": 0.02077199998893775
+    },
+    {
+      "case": "planted-n12-seed1",
+      "n_spins": 12,
+      "state_index": 1588,
+      "evolution_time": 11.0,
+      "gamma": 0.25,
+      "tv_distance": 1.8024041188534249e-13,
+      "passed": true,
+      "elapsed_seconds": 0.1867357000010088
+    },
+    {
+      "case": "planted-n12-seed1",
+      "n_spins": 12,
+      "state_index": 1588,
+      "evolution_time": 11.0,
+      "gamma": 0.425,
+      "tv_distance": 1.9621423786747746e-13,
+      "passed": true,
+      "elapsed_seconds": 0.20363350000116043
+    },
+    {
+      "case": "planted-n12-seed1",
+      "n_spins": 12,
+      "state_index": 1588,
+      "evolution_time": 11.0,
+      "gamma": 0.6,
+      "tv_distance": 1.2151300111269653e-13,
+      "passed": true,
+      "elapsed_seconds": 0.18474359999527223
+    },
+    {
+      "case": "planted-n12-seed1",
+      "n_spins": 12,
+      "state_index": 1588,
+      "evolution_time": 20.0,
+      "gamma": 0.25,
+      "tv_distance": 1.6835548630571328e-13,
+      "passed": true,
+      "elapsed_seconds": 0.3036491999955615
+    },
+    {
+      "case": "planted-n12-seed1",
+      "n_spins": 12,
+      "state_index": 1588,
+      "evolution_time": 20.0,
+      "gamma": 0.425,
+      "tv_distance": 1.7254997910448362e-13,
+      "passed": true,
+      "elapsed_seconds": 0.26358230000187177
+    },
+    {
+      "case": "planted-n12-seed1",
+      "n_spins": 12,
+      "state_index": 1588,
+      "evolution_time": 20.0,
+      "gamma": 0.6,
+      "tv_distance": 1.48012618373094e-13,
+      "passed": true,
+      "elapsed_seconds": 0.23047009999572765
+    },
+    {
+      "case": "planted-n12-seed2",
+      "n_spins": 12,
+      "state_index": 3234,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 1.3176344687900182e-13,
+      "passed": true,
+      "elapsed_seconds": 0.021393299990450032
+    },
+    {
+      "case": "planted-n12-seed2",
+      "n_spins": 12,
+      "state_index": 3234,
+      "evolution_time": 2.0,
+      "gamma": 0.425,
+      "tv_distance": 1.6962282802502116e-13,
+      "passed": true,
+      "elapsed_seconds": 0.021066599991172552
+    },
+    {
+      "case": "planted-n12-seed2",
+      "n_spins": 12,
+      "state_index": 3234,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 1.188738690543151e-13,
+      "passed": true,
+      "elapsed_seconds": 0.029169500005082227
+    },
+    {
+      "case": "planted-n12-seed2",
+      "n_spins": 12,
+      "state_index": 3234,
+      "evolution_time": 11.0,
+      "gamma": 0.25,
+      "tv_distance": 1.8700392999180534e-13,
+      "passed": true,
+      "elapsed_seconds": 0.20181420000153594
+    },
+    {
+      "case": "planted-n12-seed2",
+      "n_spins": 12,
+      "state_index": 3234,
+      "evolution_time": 11.0,
+      "gamma": 0.425,
+      "tv_distance": 2.059893545041972e-13,
+      "passed": true,
+      "elapsed_seconds": 0.14857340000162367
+    },
+    {
+      "case": "planted-n12-seed2",
+      "n_spins": 12,
+      "state_index": 3234,
+      "evolution_time": 11.0,
+      "gamma": 0.6,
+      "tv_distance": 2.0404179987704436e-13,
+      "passed": true,
+      "elapsed_seconds": 0.19793180000851862
+    },
+    {
+      "case": "planted-n12-seed2",
+      "n_spins": 12,
+      "state_index": 3234,
+      "evolution_time": 20.0,
+      "gamma": 0.25,
+      "tv_distance": 2.1891375601595057e-13,
+      "passed": true,
+      "elapsed_seconds": 0.27245489999768324
+    },
+    {
+      "case": "planted-n12-seed2",
+      "n_spins": 12,
+      "state_index": 3234,
+      "evolution_time": 20.0,
+      "gamma": 0.425,
+      "tv_distance": 1.3170522509706621e-13,
+      "passed": true,
+      "elapsed_seconds": 0.2650447000050917
+    },
+    {
+      "case": "planted-n12-seed2",
+      "n_spins": 12,
+      "state_index": 3234,
+      "evolution_time": 20.0,
+      "gamma": 0.6,
+      "tv_distance": 1.6257987988597476e-13,
+      "passed": true,
+      "elapsed_seconds": 0.2660980000073323
+    },
+    {
+      "case": "planted-n14-seed0",
+      "n_spins": 14,
+      "state_index": 2811,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 6.105108652038352e-14,
+      "passed": true,
+      "elapsed_seconds": 0.11920470000768546
+    },
+    {
+      "case": "planted-n14-seed0",
+      "n_spins": 14,
+      "state_index": 2811,
+      "evolution_time": 2.0,
+      "gamma": 0.425,
+      "tv_distance": 1.688401587925959e-13,
+      "passed": true,
+      "elapsed_seconds": 0.11946629999147262
+    },
+    {
+      "case": "planted-n14-seed0",
+      "n_spins": 14,
+      "state_index": 2811,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 8.664076630606051e-14,
+      "passed": true,
+      "elapsed_seconds": 0.10530749999452382
+    },
+    {
+      "case": "planted-n14-seed0",
+      "n_spins": 14,
+      "state_index": 2811,
+      "evolution_time": 11.0,
+      "gamma": 0.25,
+      "tv_distance": 1.9322186269684447e-13,
+      "passed": true,
+      "elapsed_seconds": 0.9353922000009334
+    },
+    {
+      "case": "planted-n14-seed0",
+      "n_spins": 14,
+      "state_index": 2811,
+      "evolution_time": 11.0,
+      "gamma": 0.425,
+      "tv_distance": 2.406933261556062e-13,
+      "passed": true,
+      "elapsed_seconds": 0.9202974999934668
+    },
+    {
+      "case": "planted-n14-seed0",
+      "n_spins": 14,
+      "state_index": 2811,
+      "evolution_time": 11.0,
+      "gamma": 0.6,
+      "tv_distance": 1.249219468847487e-13,
+      "passed": true,
+      "elapsed_seconds": 0.7603994999954011
+    },
+    {
+      "case": "planted-n14-seed0",
+      "n_spins": 14,
+      "state_index": 2811,
+      "evolution_time": 20.0,
+      "gamma": 0.25,
+      "tv_distance": 1.5164343045946182e-13,
+      "passed": true,
+      "elapsed_seconds": 1.1872139999904903
+    },
+    {
+      "case": "planted-n14-seed0",
+      "n_spins": 14,
+      "state_index": 2811,
+      "evolution_time": 20.0,
+      "gamma": 0.425,
+      "tv_distance": 1.3696106854081485e-13,
+      "passed": true,
+      "elapsed_seconds": 0.9630242999992333
+    },
+    {
+      "case": "planted-n14-seed0",
+      "n_spins": 14,
+      "state_index": 2811,
+      "evolution_time": 20.0,
+      "gamma": 0.6,
+      "tv_distance": 2.2231518704507758e-13,
+      "passed": true,
+      "elapsed_seconds": 1.1681887000013376
+    },
+    {
+      "case": "planted-n14-seed1",
+      "n_spins": 14,
+      "state_index": 11366,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 1.8301426012155512e-13,
+      "passed": true,
+      "elapsed_seconds": 0.13119479999295436
+    },
+    {
+      "case": "planted-n14-seed1",
+      "n_spins": 14,
+      "state_index": 11366,
+      "evolution_time": 2.0,
+      "gamma": 0.425,
+      "tv_distance": 1.3090035241620586e-13,
+      "passed": true,
+      "elapsed_seconds": 0.15079299999342766
+    },
+    {
+      "case": "planted-n14-seed1",
+      "n_spins": 14,
+      "state_index": 11366,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 6.584370321145862e-14,
+      "passed": true,
+      "elapsed_seconds": 0.15003810000780504
+    },
+    {
+      "case": "planted-n14-seed1",
+      "n_spins": 14,
+      "state_index": 11366,
+      "evolution_time": 11.0,
+      "gamma": 0.25,
+      "tv_distance": 2.0261883204720918e-13,
+      "passed": true,
+      "elapsed_seconds": 0.7194062000053236
+    },
+    {
+      "case": "planted-n14-seed1",
+      "n_spins": 14,
+      "state_index": 11366,
+      "evolution_time": 11.0,
+      "gamma": 0.425,
+      "tv_distance": 1.2501501833011734e-13,
+      "passed": true,
+      "elapsed_seconds": 0.9148828000033973
+    },
+    {
+      "case": "planted-n14-seed1",
+      "n_spins": 14,
+      "state_index": 11366,
+      "evolution_time": 11.0,
+      "gamma": 0.6,
+      "tv_distance": 1.7067340116370626e-13,
+      "passed": true,
+      "elapsed_seconds": 0.7476129999995464
+    },
+    {
+      "case": "planted-n14-seed1",
+      "n_spins": 14,
+      "state_index": 11366,
+      "evolution_time": 20.0,
+      "gamma": 0.25,
+      "tv_distance": 1.715366192568159e-13,
+      "passed": true,
+      "elapsed_seconds": 1.3370972999982769
+    },
+    {
+      "case": "planted-n14-seed1",
+      "n_spins": 14,
+      "state_index": 11366,
+      "evolution_time": 20.0,
+      "gamma": 0.425,
+      "tv_distance": 1.9307249964546378e-13,
+      "passed": true,
+      "elapsed_seconds": 1.0299112999928184
+    },
+    {
+      "case": "planted-n14-seed1",
+      "n_spins": 14,
+      "state_index": 11366,
+      "evolution_time": 20.0,
+      "gamma": 0.6,
+      "tv_distance": 2.122002358120499e-13,
+      "passed": true,
+      "elapsed_seconds": 1.0934149999957299
+    },
+    {
+      "case": "planted-n14-seed2",
+      "n_spins": 14,
+      "state_index": 10185,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 2.155686175565066e-13,
+      "passed": true,
+      "elapsed_seconds": 0.12892470000952017
+    },
+    {
+      "case": "planted-n14-seed2",
+      "n_spins": 14,
+      "state_index": 10185,
+      "evolution_time": 2.0,
+      "gamma": 0.425,
+      "tv_distance": 1.3223178372240988e-13,
+      "passed": true,
+      "elapsed_seconds": 0.14707110000017565
+    },
+    {
+      "case": "planted-n14-seed2",
+      "n_spins": 14,
+      "state_index": 10185,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 6.935253659088746e-14,
+      "passed": true,
+      "elapsed_seconds": 0.17048270000668708
+    },
+    {
+      "case": "planted-n14-seed2",
+      "n_spins": 14,
+      "state_index": 10185,
+      "evolution_time": 11.0,
+      "gamma": 0.25,
+      "tv_distance": 1.999719564400384e-13,
+      "passed": true,
+      "elapsed_seconds": 1.09046639999724
+    },
+    {
+      "case": "planted-n14-seed2",
+      "n_spins": 14,
+      "state_index": 10185,
+      "evolution_time": 11.0,
+      "gamma": 0.425,
+      "tv_distance": 1.256756634666234e-13,
+      "passed": true,
+      "elapsed_seconds": 0.8753094999992754
+    },
+    {
+      "case": "planted-n14-seed2",
+      "n_spins": 14,
+      "state_index": 10185,
+      "evolution_time": 11.0,
+      "gamma": 0.6,
+      "tv_distance": 1.7301237654488505e-13,
+      "passed": true,
+      "elapsed_seconds": 0.7457944000052521
+    },
+    {
+      "case": "planted-n14-seed2",
+      "n_spins": 14,
+      "state_index": 10185,
+      "evolution_time": 20.0,
+      "gamma": 0.25,
+      "tv_distance": 1.692902885129026e-13,
+      "passed": true,
+      "elapsed_seconds": 1.6010468000022229
+    },
+    {
+      "case": "planted-n14-seed2",
+      "n_spins": 14,
+      "state_index": 10185,
+      "evolution_time": 20.0,
+      "gamma": 0.425,
+      "tv_distance": 1.8851116004921353e-13,
+      "passed": true,
+      "elapsed_seconds": 1.2268056999891996
+    },
+    {
+      "case": "planted-n14-seed2",
+      "n_spins": 14,
+      "state_index": 10185,
+      "evolution_time": 20.0,
+      "gamma": 0.6,
+      "tv_distance": 2.17545894651924e-13,
+      "passed": true,
+      "elapsed_seconds": 1.3596968999918317
+    },
+    {
+      "case": "planted-n16-seed0",
+      "n_spins": 16,
+      "state_index": 15825,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 6.06340647502565e-14,
+      "passed": true,
+      "elapsed_seconds": 0.8172748999932082
+    },
+    {
+      "case": "planted-n16-seed0",
+      "n_spins": 16,
+      "state_index": 15825,
+      "evolution_time": 2.0,
+      "gamma": 0.425,
+      "tv_distance": 2.5012904976732973e-13,
+      "passed": true,
+      "elapsed_seconds": 0.8154523999983212
+    },
+    {
+      "case": "planted-n16-seed0",
+      "n_spins": 16,
+      "state_index": 15825,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 1.8920657423588525e-13,
+      "passed": true,
+      "elapsed_seconds": 0.737019499996677
+    },
+    {
+      "case": "planted-n16-seed0",
+      "n_spins": 16,
+      "state_index": 15825,
+      "evolution_time": 11.0,
+      "gamma": 0.25,
+      "tv_distance": 2.1084591355157284e-13,
+      "passed": true,
+      "elapsed_seconds": 5.091156399997999
+    },
+    {
+      "case": "planted-n16-seed0",
+      "n_spins": 16,
+      "state_index": 15825,
+      "evolution_time": 11.0,
+      "gamma": 0.425,
+      "tv_distance": 2.4618713166088576e-13,
+      "passed": true,
+      "elapsed_seconds": 4.5463569999992615
+    },
+    {
+      "case": "planted-n16-seed0",
+      "n_spins": 16,
+      "state_index": 15825,
+      "evolution_time": 11.0,
+      "gamma": 0.6,
+      "tv_distance": 1.3205950986605485e-13,
+      "passed": true,
+      "elapsed_seconds": 4.750054399992223
+    },
+    {
+      "case": "planted-n16-seed0",
+      "n_spins": 16,
+      "state_index": 15825,
+      "evolution_time": 20.0,
+      "gamma": 0.25,
+      "tv_distance": 2.0985058473565867e-13,
+      "passed": true,
+      "elapsed_seconds": 7.642468999998528
+    },
+    {
+      "case": "planted-n16-seed0",
+      "n_spins": 16,
+      "state_index": 15825,
+      "evolution_time": 20.0,
+      "gamma": 0.425,
+      "tv_distance": 1.5200663778978903e-13,
+      "passed": true,
+      "elapsed_seconds": 7.66546119999839
+    },
+    {
+      "case": "planted-n16-seed0",
+      "n_spins": 16,
+      "state_index": 15825,
+      "evolution_time": 20.0,
+      "gamma": 0.6,
+      "tv_distance": 1.9907470487948246e-13,
+      "passed": true,
+      "elapsed_seconds": 7.405073900008574
+    },
+    {
+      "case": "planted-n16-seed1",
+      "n_spins": 16,
+      "state_index": 4940,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 1.6165415284402892e-13,
+      "passed": true,
+      "elapsed_seconds": 0.660920399997849
+    },
+    {
+      "case": "planted-n16-seed1",
+      "n_spins": 16,
+      "state_index": 4940,
+      "evolution_time": 2.0,
+      "gamma": 0.425,
+      "tv_distance": 1.5373372030678236e-13,
+      "passed": true,
+      "elapsed_seconds": 0.6387629000091692
+    },
+    {
+      "case": "planted-n16-seed1",
+      "n_spins": 16,
+      "state_index": 4940,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 1.1652119256527832e-13,
+      "passed": true,
+      "elapsed_seconds": 0.6131219999952009
+    },
+    {
+      "case": "planted-n16-seed1",
+      "n_spins": 16,
+      "state_index": 4940,
+      "evolution_time": 11.0,
+      "gamma": 0.25,
+      "tv_distance": 1.3680983986360358e-13,
+      "passed": true,
+      "elapsed_seconds": 4.039964800002053
+    },
+    {
+      "case": "planted-n16-seed1",
+      "n_spins": 16,
+      "state_index": 4940,
+      "evolution_time": 11.0,
+      "gamma": 0.425,
+      "tv_distance": 1.3492139281851606e-13,
+      "passed": true,
+      "elapsed_seconds": 4.595458099996904
+    },
+    {
+      "case": "planted-n16-seed1",
+      "n_spins": 16,
+      "state_index": 4940,
+      "evolution_time": 11.0,
+      "gamma": 0.6,
+      "tv_distance": 1.3116936040911336e-13,
+      "passed": true,
+      "elapsed_seconds": 4.436394300006214
+    },
+    {
+      "case": "planted-n16-seed1",
+      "n_spins": 16,
+      "state_index": 4940,
+      "evolution_time": 20.0,
+      "gamma": 0.25,
+      "tv_distance": 1.6409666042980863e-13,
+      "passed": true,
+      "elapsed_seconds": 7.257268399989698
+    },
+    {
+      "case": "planted-n16-seed1",
+      "n_spins": 16,
+      "state_index": 4940,
+      "evolution_time": 20.0,
+      "gamma": 0.425,
+      "tv_distance": 1.5657562747322886e-13,
+      "passed": true,
+      "elapsed_seconds": 7.036421299999347
+    },
+    {
+      "case": "planted-n16-seed1",
+      "n_spins": 16,
+      "state_index": 4940,
+      "evolution_time": 20.0,
+      "gamma": 0.6,
+      "tv_distance": 1.495463961691883e-13,
+      "passed": true,
+      "elapsed_seconds": 7.137540099996841
+    },
+    {
+      "case": "planted-n16-seed2",
+      "n_spins": 16,
+      "state_index": 44800,
+      "evolution_time": 2.0,
+      "gamma": 0.25,
+      "tv_distance": 1.63994596032306e-13,
+      "passed": true,
+      "elapsed_seconds": 0.660375200008275
+    },
+    {
+      "case": "planted-n16-seed2",
+      "n_spins": 16,
+      "state_index": 44800,
+      "evolution_time": 2.0,
+      "gamma": 0.425,
+      "tv_distance": 1.0468358723711849e-13,
+      "passed": true,
+      "elapsed_seconds": 0.6667742999998154
+    },
+    {
+      "case": "planted-n16-seed2",
+      "n_spins": 16,
+      "state_index": 44800,
+      "evolution_time": 2.0,
+      "gamma": 0.6,
+      "tv_distance": 1.4591875672671547e-13,
+      "passed": true,
+      "elapsed_seconds": 0.7411395999952219
+    },
+    {
+      "case": "planted-n16-seed2",
+      "n_spins": 16,
+      "state_index": 44800,
+      "evolution_time": 11.0,
+      "gamma": 0.25,
+      "tv_distance": 1.7285031069074703e-13,
+      "passed": true,
+      "elapsed_seconds": 5.195687600004021
+    },
+    {
+      "case": "planted-n16-seed2",
+      "n_spins": 16,
+      "state_index": 44800,
+      "evolution_time": 11.0,
+      "gamma": 0.425,
+      "tv_distance": 1.253859956098062e-13,
+      "passed": true,
+      "elapsed_seconds": 4.831302299993695
+    },
+    {
+      "case": "planted-n16-seed2",
+      "n_spins": 16,
+      "state_index": 44800,
+      "evolution_time": 11.0,
+      "gamma": 0.6,
+      "tv_distance": 1.9183026905950444e-13,
+      "passed": true,
+      "elapsed_seconds": 4.409498499997426
+    },
+    {
+      "case": "planted-n16-seed2",
+      "n_spins": 16,
+      "state_index": 44800,
+      "evolution_time": 20.0,
+      "gamma": 0.25,
+      "tv_distance": 1.838862545218022e-13,
+      "passed": true,
+      "elapsed_seconds": 7.542061100000865
+    },
+    {
+      "case": "planted-n16-seed2",
+      "n_spins": 16,
+      "state_index": 44800,
+      "evolution_time": 20.0,
+      "gamma": 0.425,
+      "tv_distance": 1.5264962022524647e-13,
+      "passed": true,
+      "elapsed_seconds": 7.623836400001892
+    },
+    {
+      "case": "planted-n16-seed2",
+      "n_spins": 16,
+      "state_index": 44800,
+      "evolution_time": 20.0,
+      "gamma": 0.6,
+      "tv_distance": 2.3597400350022096e-13,
+      "passed": true,
+      "elapsed_seconds": 7.395619199989596
+    }
+  ]
+}

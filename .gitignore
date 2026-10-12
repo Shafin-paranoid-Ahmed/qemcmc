@@ -1,0 +1,24 @@
+# Local environments, data, credentials, and generated scratch
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+.env
+.env.*
+!.env.example
+data/
+Data/
+runs/
+*.log
+*.tmp
+tmp*/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.codex/
+.claude/
+# Existing small research checkpoints are explicitly included in the snapshot.
+# Ignore additional training checkpoints unless deliberately selected.
+checkpoints/*.pt

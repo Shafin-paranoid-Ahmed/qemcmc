@@ -1,0 +1,39 @@
+{
+  "budget": {
+    "level": "c",
+    "sampler": "adaptive-qemcmc-p-proxy",
+    "seed": 1,
+    "updates": 100,
+    "chains": 1,
+    "proposal_steps": 32,
+    "tag": "ladder22-v1-gpu",
+    "backend": "gpu",
+    "bits": 22,
+    "sampler_variant": "adaptive-qemcmc-p-proxy",
+    "reward_signal": "proxy",
+    "persistence": true
+  },
+  "backend": "gpu",
+  "bit_width": 22,
+  "completed": true,
+  "best_val_exact_nll": 16.303464566431984,
+  "test_metrics": {
+    "accuracy": 0.6963788300835655,
+    "macro_f1": 0.4676706725458396,
+    "macro_recall": 0.4623343862637994,
+    "ece_15bin": 0.18025895882086274,
+    "brier": 0.453572430296473,
+    "nll": 0.9122515102395528,
+    "per_class_recall": {
+      "0": 0.8728813559322034,
+      "1": 0.24242424242424243,
+      "2": 0.3103448275862069,
+      "3": 0.41935483870967744,
+      "4": 0.4666666666666667
+    },
+    "heldout_joint_exact_nll": 16.08881858649473
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_adaptive-qemcmc-p-proxy_level-c_1_ladder22-v1-gpu_history.csv"
+}

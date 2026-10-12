@@ -1,0 +1,36 @@
+{
+  "budget": {
+    "level": "c",
+    "sampler": "pt",
+    "seed": 2,
+    "updates": 100,
+    "chains": 1,
+    "proposal_steps": 32,
+    "tag": "g3-v2-gpu",
+    "backend": "gpu",
+    "bits": 20
+  },
+  "backend": "gpu",
+  "bit_width": 20,
+  "completed": true,
+  "best_val_exact_nll": 15.467072107962432,
+  "test_metrics": {
+    "accuracy": 0.5348189415041783,
+    "macro_f1": 0.28020844984493365,
+    "macro_recall": 0.2816125947166086,
+    "ece_15bin": 0.2629153453140446,
+    "brier": 0.7156566820986816,
+    "nll": 1.424524233931686,
+    "per_class_recall": {
+      "0": 0.7245762711864406,
+      "1": 0.18181818181818182,
+      "2": 0.27586206896551724,
+      "3": 0.22580645161290322,
+      "4": 0.0
+    },
+    "heldout_joint_exact_nll": 15.464419252897494
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_pt_level-c_2_g3-v2-gpu_history.csv"
+}

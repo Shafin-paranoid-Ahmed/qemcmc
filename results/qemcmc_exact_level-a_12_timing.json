@@ -1,0 +1,6 @@
+{
+  "spins": 12,
+  "exact_expm_multiply_seconds_per_proposal": 0.0837108999985503,
+  "ordered_trotter_used": false,
+  "method": "scipy.sparse.linalg.expm_multiply"
+}

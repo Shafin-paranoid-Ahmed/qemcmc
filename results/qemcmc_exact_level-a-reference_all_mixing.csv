@@ -1,0 +1,10 @@
+reference,seed,sampler,proposal_steps,burn_in,energy_iat_steps,ess_per_proposal,acceptance,sampler_seconds
+Layden Supplement Eq. S26 at Fig. 4 T=0.1,0,local,2000,200,inf,0.0,0.0025,0.0
+Layden Supplement Eq. S26 at Fig. 4 T=0.1,0,uniform,2000,200,241.24319777586888,0.004145194597068255,0.005,0.0
+Layden Supplement Eq. S26 at Fig. 4 T=0.1,0,qemcmc,2000,200,15.041127698769433,0.0664843767054656,0.166,87.31181549980829
+Layden Supplement Eq. S26 at Fig. 4 T=0.1,1,local,2000,200,inf,0.0,0.004,0.0
+Layden Supplement Eq. S26 at Fig. 4 T=0.1,1,uniform,2000,200,184.82112676227595,0.0054106368547695224,0.0065,0.0
+Layden Supplement Eq. S26 at Fig. 4 T=0.1,1,qemcmc,2000,200,16.57484164110092,0.06033240145838152,0.1555,89.01708510027674
+Layden Supplement Eq. S26 at Fig. 4 T=0.1,2,local,2000,200,inf,0.0,0.005,0.0
+Layden Supplement Eq. S26 at Fig. 4 T=0.1,2,uniform,2000,200,78.09916512321128,0.012804234186401019,0.004,0.0
+Layden Supplement Eq. S26 at Fig. 4 T=0.1,2,qemcmc,2000,200,32.48651756845462,0.030782000498909425,0.1565,88.1012300997827

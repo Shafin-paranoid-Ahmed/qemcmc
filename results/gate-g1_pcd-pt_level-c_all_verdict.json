@@ -1,0 +1,9 @@
+{
+  "gate": "G1",
+  "passed": true,
+  "mean_ebm_macro_f1": 0.41383207289359536,
+  "mean_best_simple_macro_f1": 0.45180536435330426,
+  "far_worse_threshold": 0.1,
+  "near_unimodal": false,
+  "rule": "pass iff EBM is within 0.10 Macro-F1 of best simple baseline and not near-unimodal on every seed"
+}

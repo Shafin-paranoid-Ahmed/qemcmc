@@ -1,0 +1,9 @@
+{
+  "gate": "G2",
+  "passed": false,
+  "qemcmc_mean_energy_iat_steps": 54.240777895879944,
+  "local_mean_energy_iat_steps": 26.363469009182843,
+  "uniform_mean_energy_iat_steps": Infinity,
+  "matched_proposal_steps": 300,
+  "rule": "QeMCMC mean energy IAT must be lower than both local and uniform proposals"
+}

@@ -1,0 +1,12 @@
+{
+  "seed": 2,
+  "bits": 22,
+  "val_macro_f1": 0.4446957057016114,
+  "val_accuracy": 0.6229050279329609,
+  "majority_accuracy": 0.6564245810055865,
+  "majority_macro_f1": 0.15851602023608768,
+  "pca_explained_variance": 0.6555180549621582,
+  "encoder": "ResNet18_Weights.IMAGENET1K_V1",
+  "threshold": "train-centered PCA zero",
+  "encoder_frozen": true
+}

@@ -1,0 +1,35 @@
+{
+  "budget": {
+    "level": "b-easy",
+    "sampler": "qemcmc",
+    "seed": 0,
+    "updates": 100,
+    "chains": 1,
+    "proposal_steps": 32,
+    "tag": "g3-v2-gpu",
+    "backend": "gpu",
+    "bits": 20
+  },
+  "backend": "gpu",
+  "bit_width": 20,
+  "completed": true,
+  "best_val_exact_nll": 8.870272260114174,
+  "test_metrics": {
+    "accuracy": 0.998,
+    "macro_f1": 0.9959302645328053,
+    "macro_recall": 0.9943181818181819,
+    "ece_15bin": 0.3021789284709439,
+    "brier": 0.1426892530047583,
+    "nll": 0.37682139542861703,
+    "per_class_recall": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 0.9772727272727273
+    },
+    "heldout_joint_exact_nll": 8.530198212574035
+  },
+  "shared_energy_model": true,
+  "test_touched_once": true,
+  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_qemcmc_level-b-easy_0_g3-v2-gpu_history.csv"
+}
