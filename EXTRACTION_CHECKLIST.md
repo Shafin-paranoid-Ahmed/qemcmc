@@ -9,7 +9,7 @@
 - [x] Run relevant CPU/synthetic checks and record their limits in VALIDATION.md.
 - [x] Review files, sizes, credential patterns, and relative Markdown links.
 - [x] Exclude environments, raw datasets, caches, and unrelated thesis tracks.
-- [ ] Verify initial public GitHub push and fresh clone (recorded after publication).
+- [x] Verify initial public GitHub push and fresh clone (see VALIDATION.md).
 
 Licensing status is documented in NOTICE.md. No new license was invented or
 assigned during extraction. Full scientific reruns and fresh installations are

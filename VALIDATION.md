@@ -31,3 +31,16 @@ Initial sandbox runs hit Windows temporary-directory permissions; relevant
 checks passed when rerun outside those restrictions. CPU unittest discovery also
 imported the optional GPU module, so the documented CPU entry point explicitly
 loads the four CPU test modules instead.
+
+## Publication verification
+
+Public repository: https://github.com/Shafin-paranoid-Ahmed/qemcmc
+
+A fresh HTTPS clone of commit `d9475b603dba1d0cec811d26fefdf4bfcc4aab13` was downloaded from GitHub.
+All 827 source-manifest hashes matched. The documented
+CPU/synthetic checks passed again from that clone with PYTHONPATH cleared.
+The original clone attempt used SSH and failed host-key verification; publication
+succeeded through authenticated HTTPS without disabling host verification.
+The local TokenSave integration added an ignore entry during clone inspection;
+`.tokensave` is now included in the published ignore file.
+Only documentation and this ignore entry changed after the verified code commit.

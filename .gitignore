@@ -22,3 +22,4 @@ Thumbs.db
 # Existing small research checkpoints are explicitly included in the snapshot.
 # Ignore additional training checkpoints unless deliberately selected.
 checkpoints/*.pt
+.tokensave
