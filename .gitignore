@@ -17,9 +17,10 @@ tmp*/
 Thumbs.db
 .idea/
 .vscode/
-.codex/
-.claude/
 # Existing small research checkpoints are explicitly included in the snapshot.
 # Ignore additional training checkpoints unless deliberately selected.
 checkpoints/*.pt
 .tokensave
+
+# Generated code-graph output
+graphify-out/

@@ -30,5 +30,5 @@
   },
   "shared_energy_model": true,
   "test_touched_once": true,
-  "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_qemcmc_level-b-easy_0_smoke-g3-v2-gpu-20bit_history.csv"
+  "history": "WORKSPACE\\qsampler_ebm_pilot\\results\\stage1_qemcmc_level-b-easy_0_smoke-g3-v2-gpu-20bit_history.csv"
 }

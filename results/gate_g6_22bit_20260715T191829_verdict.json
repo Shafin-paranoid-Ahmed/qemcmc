@@ -22,7 +22,7 @@
     "completed_smoke_updates": 3,
     "requested_smoke_updates": 3,
     "run_artifact_tag": "g6-22bit-20260715T191829-smoke",
-    "history": "G:\\FOR THESIS\\MAIN\\qsampler_ebm_pilot\\results\\stage1_qemcmc_level-c_0_g6-22bit-20260715T191829-smoke_history.csv",
+    "history": "WORKSPACE\\qsampler_ebm_pilot\\results\\stage1_qemcmc_level-c_0_g6-22bit-20260715T191829-smoke_history.csv",
     "per_update_seconds": [
       64.08573590000015,
       59.39254380000057,

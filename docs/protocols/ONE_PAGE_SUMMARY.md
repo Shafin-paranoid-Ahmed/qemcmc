@@ -29,7 +29,7 @@ make no speed or "quantum advantage" claims — the question is sample
    does the quantum sampler produce more accurate gradients than classical
    samplers? Tested on 4 difficulty levels (planted rugged controls,
    synthetic easy/hard, and the real crop codes), 7 samplers, 3 seeds.
-2. **Stage 2 (the thesis invention):** Can the quantum proposal be
+2. **Stage 2 (the project invention):** Can the quantum proposal be
    **adapted online while the EBM trains** — a bandit controller that picks
    evolution-time/mixing parameters each update, rewarded by gradient
    accuracy? And does a cheap, budget-free reward signal (accepted jump

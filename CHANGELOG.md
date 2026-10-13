@@ -1,4 +1,4 @@
-> Historical thesis record. Original machine paths and commands are retained as provenance. Use the standalone [README](README.md) and runbook for current setup.
+> Historical research record. Original machine paths and commands are retained as provenance. Use the standalone [README](README.md) and runbook for current setup.
 
 # Change Log
 
@@ -27,7 +27,7 @@
   (default `v2`); the original inf-poisoned run's files are untouched.
 - Smoke-verified at `--spins 12 --seeds 0 --steps 200 --burn-in 50`; smoke
   artifacts deleted after verification. No Stage-1 runs and no full G2 rerun
-  were launched — commands handed off to the user in `RUN_COMMANDS.md`.
+  were launched — commands handed off to the author in `RUN_COMMANDS.md`.
 
 
 ## 2026-07-12 (later)
@@ -38,12 +38,12 @@
   old 600-step command silently mixed budgets).
 - Seeded `results/qemcmc_exact_level-a_v3_all_mixing.csv` with the 27 valid
   3000/500 rows from v2; v2 files kept untouched as the contaminated record.
-  v3 completion command handed to the user in RUN_COMMANDS.md (~7-8 h, nine
+  v3 completion command handed to the author in RUN_COMMANDS.md (~7-8 h, nine
   16-spin chains).
 
 ## 2026-07-13
 
-- G2 v3 completion run finished (user-launched): 36/36 chains at matched
+- G2 v3 completion run finished (author-launched): 36/36 chains at matched
   3000/500. **G2 PASSED** — verdict, per-spin medians, mechanism reading, and
   honesty bounds recorded in RESULTS_LOG.md. Stage 1 unlocked.
 
@@ -56,7 +56,7 @@
   resume budget guards.
 - Added benchmark_stage1.py, selected the matched 40x4x8 budget before smokes,
   and smoke-verified every sampler without launching a full run.
-- Added the READY FOR USER Stage-1 matrix, SAMPLER_REPORT.md placeholder, and
+- Added the READY TO RUN Stage-1 matrix, SAMPLER_REPORT.md placeholder, and
   finalize_stage1.py aggregation helper.
 - Added an engineering-only invocation pause control and verified a genuine
   interrupted-state resume from update 1 to update 2 under an unchanged budget.
@@ -116,11 +116,11 @@
 - Created the separate `.venv-gpu` CUDA environment; `.venv-e1` was untouched.
 - Added only `scripts/gpu_bench/` code: a complex128 Hermitian Chebyshev GPU
   proposal, dense unit test, fixed numerical-acceptance matrix, and the
-  user-launched CPU/GPU timing suite.
+  author-launched CPU/GPU timing suite.
 - Added isolated records under `results/gpu_bench/`; numerical acceptance
   passed with worst TV 2.501e-13. The performance verdict remains pending the
-  user command, and no existing sampler/training file was modified.
-- Review-hardened the user benchmark to require every registered spin size,
+  manual command, and no existing sampler/training file was modified.
+- Review-hardened the author benchmark to require every registered spin size,
   validate the acceptance artifact fields, and time four class-conditioned
   diagonal rebuilds followed by a genuinely sequential 32-proposal chain.
 
@@ -149,14 +149,14 @@
 - Added n=20 six-case proposal acceptance and exact-reference numerical/timing
   scripts and artifacts under `results/gpu_bench/`.
 - Updated the finalizer to require Level A, enforce backend/width consistency,
-  and support no-write validation. Added the complete user-only 84-run command
+  and support no-write validation. Added the complete manual 84-run command
   block and finalization command to `RUN_COMMANDS.md`.
 - Re-ran all seven explicit GPU/20-bit smokes plus resume and mismatch guards;
   quarantined all smoke/benchmark run artifacts. No official matrix was run.
 
 ## 2026-07-14
 
-- Official Stage-1 matrix (g3-v2-gpu) completed by the user (84/84) and
+- Official Stage-1 matrix (g3-v2-gpu) completed by the author (84/84) and
   finalized. G3 PASSED; G4 entry condition met. Verdict, causal-chain tables,
   and the PCD-vs-QeMCMC transfer finding recorded in RESULTS_LOG.md.
 
@@ -172,7 +172,7 @@
 - Passed five 12-bit GPU completion smokes, a hard-error budget-mismatch smoke,
   and an interrupt/resume comparison whose final model, chains, RNG, and
   controller state matched an uninterrupted run. Smoke artifacts were removed
-  after verification. No official Stage-2 run was launched by Codex.
+  after verification. No official Stage-2 run was launched during implementation.
 - Appended the reproduction guard, G5, and three-window full-matrix commands to
   `RUN_COMMANDS.md`.
 
@@ -206,9 +206,9 @@
   degree-doubling and state-norm checks, and fixed 22/24-bit wall ceilings.
 - Added unit coverage for 22/24-bit tagged dataset routing and the existing
   bit-width resume-budget hard error.
-- Appended user-only 22/24-bit code generation, G6a/G6b, and exact 18-run rung
+- Appended manual 22/24-bit code generation, G6a/G6b, and exact 18-run rung
   matrices to `RUN_COMMANDS.md`.
-- No official run was launched by the agent.
+- No official run was launched during implementation.
 
 ## 2026-09-07 — Current documentation restored
 

@@ -1,4 +1,4 @@
-> Historical thesis record. Original machine paths and commands are retained as provenance. Use the standalone [README](../../README.md) and runbook for current setup.
+> Historical research record. Original machine paths and commands are retained as provenance. Use the standalone [README](../../README.md) and runbook for current setup.
 
 # Quantum-Sampler EBM Pilot
 
@@ -16,7 +16,7 @@ of hardware speedup, quantum advantage, or superior crop classification.
 Read [Stage 1](../../results/SAMPLER_REPORT.md), [Stage 2](../../results/ADAPTIVE_REPORT.md),
 [22-bit scaling](../../results/LADDER_REPORT.md), and [the results log](../../RESULTS_LOG.md).
 The registered protocols are in
-[the sampler specification directory](https://github.com/yes-yes-company/THESIS/blob/da7ad651d7e3eaebfa2216950a5f2dd0d0640a1a/docs/still_exploring/quantum_sampler_ebm).
+[the protocols directory](../protocols/).
 
 Labels come only from the frozen `full_qcnn_pilot/splits/` manifests. The
 ResNet-18 encoder is pretrained and frozen; PCA is fit on each seed's training

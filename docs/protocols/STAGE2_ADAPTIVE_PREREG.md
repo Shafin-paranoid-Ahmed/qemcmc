@@ -21,7 +21,7 @@ Gate record feeding this spec: G3 verdict (2026-07-14) and G4 verdict
 > pre-registered proxy-signal transfer study.
 
 No publication was found occupying this slot as of 2026-07-14 (G4 literature
-sub-check). This is the thesis's invention headline. It is a claim about a
+sub-check). This is the project's invention headline. It is a claim about a
 **new hybrid training algorithm and its mechanism**, never about quantum
 advantage or wall-clock speed.
 
@@ -291,8 +291,8 @@ must be reported alongside the §4 decision rules.
   budget-dict extended; no fork of the trainer).
 - `ADAPTIVE_REPORT.md` (parent §10) with the §4 decision rules answered and
   the arm-trajectory figure.
-- Implementation by the Codex agent from this spec; ALL run commands are
-  handed to the user (never executed by the agent); verification of the
+- Implementation from this spec; ALL run commands are
+  handed to the author (never executed during implementation); verification of the
   implementation, gate G5 reading, and the final verdicts are done here.
 - Append-only logging in `RESULTS_LOG.md`/`CHANGELOG.md` as always; every
   artifact tagged stage2-v1-gpu.

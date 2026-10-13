@@ -50,7 +50,7 @@ remains cheap per update; the ladder therefore ends there by design.
 
 **Level C only.** It carries both findings under test; Levels A/B are
 synthetic controls whose Stage-1/2 story (persistence dominates) does not
-change with width in a way this thesis needs to establish. New code files
+change with width in a way this project needs to establish. New code files
 are generated at 22 and 24 bits with the SAME frozen encoder, splits, and
 quantization procedure (`build_codes.py`), tagged like the existing 16/20-bit
 files. Code-quality metrics (bit usage, per-class code entropy, duplicate
@@ -174,15 +174,15 @@ Level C, per rung. Secondary: updates 51–100. Fixed now:
 - Wider codes are expected to have more low-usage bits (quantizer spreading)
   — a data-quality observation, reported alongside rule 4.
 - Genuinely uncertain: whether the qemcmc-vs-mh-uniform margin grows or
-  shrinks with width. Either direction is a reportable thesis result
+  shrinks with width. Either direction is a reportable project result
   (growing = the quantum proposal exploits structure that widens with the
   code; shrinking = the 20-bit result is near its best size).
 
 ## 7. Deliverables and handoff
 
-- Implementation by Codex from this spec; smokes and unit tests only —
+- Implementation from this spec; smokes and unit tests only —
   **ALL official run commands are appended to RUN_COMMANDS.md and launched
-  by the user, never by an agent** (standing run-ownership protocol).
+  by the author, never during implementation** (standing run-ownership protocol).
 - Code: extend `--bits` choices with 22/24 + code-file tag mapping in
   `read_dataset`; `build_codes.py` invocations at 22/24 bits; G6a/G6b check
   scripts writing verdict JSONs into `results/`; no change to samplers,

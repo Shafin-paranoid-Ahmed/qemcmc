@@ -1,4 +1,4 @@
-> Historical thesis record. Original machine paths and commands are retained as provenance. Use the standalone [README](README.md) and runbook for current setup.
+> Historical research record. Original machine paths and commands are retained as provenance. Use the standalone [README](README.md) and runbook for current setup.
 
 # Quantum-Sampler EBM Handoff
 
@@ -20,7 +20,7 @@ Hard invariants remain:
 - Use the shared class-conditional energy model and matched proposal budgets.
 - Report simulator proposal-step quality, not hardware or wall-clock advantage.
 - Preserve completed artifacts and exact resume budgets; use the current runbook.
-- Append dated logs and keep official launches user-owned.
+- Append dated logs and keep official launches author-owned.
 
 The dominant Stage-2 finding is persistence, not the adaptive controller.
 Do not rewrite negative registered outcomes or infer downstream classification

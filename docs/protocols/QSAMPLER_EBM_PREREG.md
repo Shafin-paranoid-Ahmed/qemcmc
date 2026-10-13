@@ -2,15 +2,14 @@
 
 Date: 2026-07-12 (written BEFORE any code; expectations below must never be edited
 after results exist)
-Status: PRE-REGISTERED, awaiting supervisor buy-in. Code folder (to be created by
-the implementing agent): `qsampler_ebm_pilot/` at repo root.
+Status: PRE-REGISTERED, awaiting review. Code folder (to be created during implementation): `qsampler_ebm_pilot/` at repo root.
 Relationship to the Full-QCNN pilot: independent second contribution; the QCNN
 pilot and its ablations (`full_qcnn_pilot/`) continue unchanged and are NOT
 modified by this project.
 
 ---
 
-## 0. One-page summary (supervisor-facing)
+## 0. One-page summary (reviewer-facing)
 
 **Research question.** Energy-based models (EBMs) need samples from their own
 Boltzmann distribution at every training step (the "negative phase"). Classical
@@ -160,7 +159,7 @@ assumption failure (report as such).
 ## 6. Stages and kill gates
 
 - **G0 (PASSED 2026-07-12):** literature slot open under the narrow claim (§2).
-- **Stage 0 (agent, ~days):** scaffold `qsampler_ebm_pilot/` (README, HANDOFF,
+- **Stage 0 (~days):** scaffold `qsampler_ebm_pilot/` (README, HANDOFF,
   RESULTS_LOG, CHANGELOG, scripts/); build codes for Level C; enumerate-exact
   utilities; verify code-quality (train a logistic head on the 20-bit codes —
   it must beat majority-class meaningfully or the codes carry no signal).
@@ -169,7 +168,7 @@ assumption failure (report as such).
   measure landscape ruggedness of the trained EBM (mode count / barrier estimate
   via enumeration). If the EBM is far worse than the simple baselines OR its
   landscape is near-unimodal, STOP Stage-1-on-C and re-scope to Levels A+B only
-  (still a reportable mechanistic thesis).
+  (still a reportable mechanistic project).
 
 ### 2026-07-12 reconciliation note - quantitative G1 proceed/stop rule
 
@@ -227,7 +226,7 @@ not gate-defining, as originally specified.
 
 - **G3 — Stage-1 plug-in complete (~week 4):** stable end-to-end EBM training
   with QeMCMC negative phase on A/B/C; full metric suite (§7) vs all classical
-  controls, 3 seeds. This is the mandatory baseline AND the fallback thesis.
+  controls, 3 seeds. This is the mandatory baseline AND the fallback project.
 
 ### 2026-07-13 decision note - Stage-1 bit width
 

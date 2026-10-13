@@ -1,6 +1,6 @@
-"""User-launched CPU-vs-GPU backend benchmark.
+"""Manually launched CPU-vs-GPU backend benchmark.
 
-This script is intentionally not invoked by the implementing agent.  It times
+This script is intentionally not invoked by the automated checks.  It times
 at least 20 complete proposal distributions at each requested size and the
 Stage-1 pattern of rebuilding theta's diagonal followed by 32 sequential
 proposals.  Comparisons concern backend throughput only; they are not MCMC

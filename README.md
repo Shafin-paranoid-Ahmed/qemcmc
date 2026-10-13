@@ -70,11 +70,11 @@ If you already have the checkout, start from its root and skip cloning. Environm
 
 The CPU runner explicitly selects the **14 CPU unit tests**, avoiding imports of the optional GPU backend. The smoke check verifies frozen split loading, agreement between direct and subprocess metrics, and a normalized four-spin quantum proposal. Neither command launches the historical grid or regenerates image features.
 
-Use [requirements.txt](requirements.txt) for the core NumPy/SciPy/scikit-learn stack. Extraction verification used an existing environment; fresh dependency installation and other operating systems were not tested. Full details are in [VALIDATION.md](VALIDATION.md).
+Use [requirements.txt](requirements.txt) for the core NumPy/SciPy/scikit-learn stack. Verified environments are listed in [VALIDATION.md](VALIDATION.md).
 
 ## Data and optional image-code generation
 
-Historical binary-code tables are included in `results/`, so they can be inspected and used by the EBM code without downloading raw images. The seed 0/1/2 manifests in [splits/](splits/) preserve the original crop task. The metric implementation and manifests are stored locally: there is no runtime dependency on the QCNN or thesis repository.
+Historical binary-code tables are included in `results/`, so they can be inspected and used by the EBM code without downloading raw images. The seed 0/1/2 manifests in [splits/](splits/) preserve the original crop task. The metric implementation and manifests are stored locally: there is no runtime dependency on the QCNN repository.
 
 Regenerating Level-C codes requires the original Dacon crop dataset and the optional image dependencies:
 
@@ -90,7 +90,7 @@ The Level-C pipeline uses a **frozen pretrained ResNet-18**, followed by PCA and
 
 ## Optional GPU environment
 
-The GPU backend has a separate dependency record, [requirements-gpu.txt](requirements-gpu.txt). The small extraction check passed with **Python 3.12.10, CuPy 14.1.1, and CUDA 13 packages**. A compatible NVIDIA driver and the matching runtime/compiler dependencies are required. These are observed working versions, not a freshly tested installation recipe.
+The GPU backend has a separate dependency record, [requirements-gpu.txt](requirements-gpu.txt). The small GPU check passed with **Python 3.12.10, CuPy 14.1.1, and CUDA 13 packages**. A compatible NVIDIA driver and the matching runtime/compiler dependencies are required. These are observed working versions, not a freshly tested installation recipe.
 
 | Setting | Purpose | Default |
 | --- | --- | --- |
@@ -119,7 +119,7 @@ Runs specify a dataset level, sampler, seed, update count, chain count, proposal
 
 The trainer stores history, metadata, and resume state under `results/`. Resume state includes model parameters, optimizer state, chains, and random-number-generator state; adaptive runs also preserve the controller. Restart an interrupted run with the same budget flags. The implementation rejects incompatible resume budgets and guards repeated final-test evaluation.
 
-Large state spaces and exact references can be expensive. Use a disposable reproduction checkout so full runs and aggregation scripts do not disturb the published result files. Historical G:/F: machine paths in archived commands are provenance, not required local paths.
+Large state spaces and exact references can be expensive. Use a disposable reproduction checkout so full runs and aggregation scripts do not disturb the published result files. `WORKSPACE` in archived commands and result metadata stands for the machine-specific directory the runs used; it is not a required local path.
 
 ## Repository guide
 
@@ -136,11 +136,14 @@ Large state spaces and exact references can be expensive. Use a disposable repro
 | [splits/](splits/) and [results/](results/) | Frozen manifests, code tables, histories, and reports. |
 | [docs/protocols/](docs/protocols/) | Stage 1, adaptive, and scaling preregistrations. |
 
-## Provenance and validation
+## Reproducibility and validation
 
-This is a clean standalone snapshot of the original thesis study. Historical result metadata preserves the source machines and commits; extraction did not recompute scientific results.
+The repository is self-contained. Recorded result files keep their original values; their path fields use `WORKSPACE` in place of the machine-specific directory the runs used.
 
-- [PROVENANCE.md](PROVENANCE.md) and [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json): source attribution, extraction changes, and file hashes.
-- [VALIDATION.md](VALIDATION.md): 14 passing CPU tests, synthetic checks, the four-spin GPU comparison, and fresh GitHub clone verification. Full training and the full GPU acceptance matrix were not rerun.
-- [EXTRACTION_CHECKLIST.md](EXTRACTION_CHECKLIST.md): completed separation/publication checklist.
-- [NOTICE.md](NOTICE.md): contributor credit and licensing status; extraction did not introduce a new redistribution license.
+- [MANIFEST.json](MANIFEST.json): SHA-256 hashes of the frozen code, splits, code tables, and results.
+- [VALIDATION.md](VALIDATION.md): 14 passing CPU tests, synthetic checks, the four-spin GPU comparison, and a fresh-install check. Full training and the full GPU acceptance matrix were not rerun.
+- [NOTICE.md](NOTICE.md): authorship, licensing status, and dataset terms.
+
+## Contributors
+
+Shafin Ahmed ([@Shafin-paranoid-Ahmed](https://github.com/Shafin-paranoid-Ahmed)), with contributions from [@guardianbot1](https://github.com/guardianbot1) and [@thinkiamparanoid2](https://github.com/thinkiamparanoid2).

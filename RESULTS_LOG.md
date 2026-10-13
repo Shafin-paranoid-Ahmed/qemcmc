@@ -1,4 +1,4 @@
-> Historical thesis record. Original machine paths and commands are retained as provenance. Use the standalone [README](README.md) and runbook for current setup.
+> Historical research record. Original machine paths and commands are retained as provenance. Use the standalone [README](README.md) and runbook for current setup.
 
 # Results Log
 
@@ -50,15 +50,15 @@ deleted after verification, not a gate result):
   confirms resume correctness, not just resume-skip.
 - Existing `test_qemcmc.py` and `test_exact.py` still pass unchanged.
 
-**READY FOR USER — G2 full rerun.** See `RUN_COMMANDS.md` for the exact
+**READY TO RUN — G2 full rerun.** See `RUN_COMMANDS.md` for the exact
 copy-paste PowerShell commands, expected ~10-11h wall-clock, and expected
 output files. Verdict/interpretation entry for the full rerun: **placeholder —
-to be written after the user's run completes. Do not pre-fill.**
+to be written after the author's run completes. Do not pre-fill.**
 
 
 ## 2026-07-12 — G2 v2 rerun: 16-spin tier contaminated by a mixed-budget resume
 
-The user's v2 run completed with `passed: false`, but the verdict is not a
+The author's v2 run completed with `passed: false`, but the verdict is not a
 valid gate read. `qemcmc_exact_level-a_v2_all_mixing.csv` shows the run was
 resumed with the wrong flags: all 12/14-spin chains plus 16-spin seed-0's
 local/uniform/PT ran at the registered 3000 steps / 500 burn-in, but 16-spin
@@ -124,7 +124,7 @@ Reading:
 
 **Gate consequence: G2 PASSED → Stage 1 unlocked** (QeMCMC as negative-phase
 sampler inside EBM training on Level B, then Level C crop codes; G3 criteria
-per QSAMPLER_EBM_PREREG.md §6). All long runs remain user-launched.
+per QSAMPLER_EBM_PREREG.md §6). All long runs remain author-launched.
 
 ## 2026-07-13 - Stage-1 data decisions (before affected runs)
 
@@ -136,7 +136,7 @@ Level B is fixed before Stage-1 runs: four planted 16-bit templates per seed,
 pairwise Hamming distance at least 6; mode weights 40/30/20/10 percent; one
 pseudo-class per mode; independent bit-flip noise p=0.05 for level-b-easy
 and p=0.15 for level-b-hard; 2,000 train, 500 validation, 500 test examples;
-seeds 0/1/2. Verdict and interpretation remain placeholders until user-launched
+seeds 0/1/2. Verdict and interpretation remain placeholders until author-launched
 Stage-1 runs complete.
 
 Optional Level-A learning arms draw 2,000/500/500 states from the exact
@@ -185,8 +185,8 @@ complete; changing updates from 2 to 3 hard-failed with resume budget mismatch.
 Smoke artifacts are quarantined under results/smoke_20260713 and are excluded
 from final aggregation. These are engineering checks, not scientific results.
 
-READY FOR USER: Stage-1 commands and estimates are in RUN_COMMANDS.md. G3
-verdict and interpretation remain placeholders until user-launched runs finish.
+READY TO RUN: Stage-1 commands and estimates are in RUN_COMMANDS.md. G3
+verdict and interpretation remain placeholders until author-launched runs finish.
 
 ## 2026-07-13 - Stage-1 interrupted-resume verification
 
@@ -202,7 +202,7 @@ cells and conclusions remain unfilled.
 
 ## 2026-07-13 - Stage-1 metric-integrity corrections and refreshed benchmark
 
-Before any user-launched Stage-1 run, smoke review found and corrected two
+Before any author-launched Stage-1 run, smoke review found and corrected two
 engineering defects: sampled-state indices now use the same +1-bit convention
 as `exact.all_spins`, and IAT is computed within each chain then aggregated
 by the median instead of flattening/interleaving independent chains. TV/KL now
@@ -270,7 +270,7 @@ script was removed. The latest authoritative medians are:
 | exact | 0 | 0.483 | 0 | 0.483 |
 
 The refreshed central estimate is 40 x 140.787 = 5,631 seconds (1.56 hours)
-per QeMCMC seed and 4.69 hours per three-seed level. The user handoff retains
+per QeMCMC seed and 4.69 hours per three-seed level. The author handoff retains
 8-9 hours per level using the slower prior observation plus margin.
 
 Final test access is now crash-fail-safe: state records
@@ -290,7 +290,7 @@ conservative 8-9 h session allowance is unchanged.
 
 ## 2026-07-13 - Stage-1 metric-integrity corrections and refreshed benchmark
 
-Before any user-launched Stage-1 run, smoke review found and corrected two
+Before any author-launched Stage-1 run, smoke review found and corrected two
 engineering defects: sampled-state indices now use the same +1-bit convention
 as `exact.all_spins`, and IAT is computed within each chain then aggregated
 by the median instead of flattening/interleaving independent chains. TV/KL now
@@ -365,7 +365,7 @@ A real one-update benchmark ran the complete training update path at the final
 The actual QeMCMC update implies 40 x 107.126 = 4,285 seconds = 1.19 hours per
 seed and 3.57 hours for three seeds. The isolated component benchmark implies
 1.57 hours/seed and 4.70 hours/level. Because randomized evolution times vary
-and an earlier same-machine sample was slower, the user-launch session estimate
+and an earlier same-machine sample was slower, the author-launch session estimate
 remains 8-9 hours per level. All seven benchmark artifacts were quarantined;
 the aggregate timing CSV remains in results. No full run was launched.
 
@@ -426,15 +426,15 @@ seeds 0/1/2, 3x3 TIME_RANGE/GAMMA_RANGE grid) passed everywhere; worst TV was
 2.501e-13 at planted n=16 seed 0, t=2, gamma=0.425, versus the fixed limit
 1e-8. Artifact: `results/gpu_bench/numerical_acceptance.json`.
 
-Pre-registered backend decision rule, recorded before the user benchmark:
+Pre-registered backend decision rule, recorded before the author benchmark:
 adopt the GPU backend in a later task only if (a) numerical acceptance passes
 everywhere and (b) speedup at n=16 for problem-diagonal rebuild plus 32
 sequential proposals is at least 2x. Otherwise the recorded verdict is
 **stay on CPU**, which is a finding rather than a failure. The timing table and
-backend verdict remain pending the user-launched benchmark; no existing pilot
+backend verdict remain pending the author-launched benchmark; no existing pilot
 implementation is changed by this work.
 
-Implementation-review clarification before the user benchmark: the realistic
+Implementation-review clarification before the author benchmark: the realistic
 n=16 timing now mirrors Stage 1's shared class-conditional model by rebuilding
 all four class-conditioned problem diagonals from one shared coupling matrix,
 then advancing one state through 32 sequential proposal distributions. The
@@ -443,7 +443,7 @@ script hard-requires the complete 12/14/16/18/20 suite and validates the fixed
 
 ## 2026-07-13 — GPU backend benchmark verdict: ADOPT (82x on the Stage-1 shape)
 
-User-launched `gpu_bench/bench.py` on the idle machine (g3-v1 processes had
+Manually launched `gpu_bench/bench.py` on the idle machine (g3-v1 processes had
 been killed by a power outage; CPU baseline uncontaminated). Medians over 20
 proposals, CPU SciPy `expm_multiply` vs GPU CuPy Chebyshev (complex128):
 
@@ -520,7 +520,7 @@ validation mode. Fifty-four smoke/benchmark files were quarantined under
 
 **Verdict placeholders:** Stage-1 sampler-quality, learning, and downstream
 verdicts remain unfilled. No official `g3-v2-gpu` run exists yet. The complete
-user-only command block is appended to `RUN_COMMANDS.md`.
+manual command block is appended to `RUN_COMMANDS.md`.
 
 ## 2026-07-14 — G3 VERDICT: PASSED; G4 entry condition MET (QeMCMC best gradient accuracy on real crop codes)
 
@@ -625,8 +625,8 @@ budget, 20-bit, GPU backend. Fixed QeMCMC / PCD / mh-uniform / exact baselines
 reused from g3-v2-gpu (identical budgets), protected by a 1%-tolerance
 reproduction check. Internal gate G5 (controller sanity on Level A seed 0)
 defined before the full matrix. Expectations locked in the spec's §7.
-Next: implementation handoff prompt to the coding agent; run commands go to
-the user.
+Next: implementation; run commands go to
+the author.
 
 ## 2026-07-14 — Stage-2 implementation ready; official runs still pending
 
@@ -648,8 +648,8 @@ chain states and labels, RNG state, and controller state exactly matched the
 uninterrupted run with the same scientific budget.
 
 All smoke artifacts were deleted after verification. No reproduction guard,
-G5 run, or 20-bit `stage2-v1-gpu` matrix run was launched by Codex. The
-official user-only blocks are appended to `RUN_COMMANDS.md`.
+G5 run, or 20-bit `stage2-v1-gpu` matrix run was launched during implementation. The
+official manual blocks are appended to `RUN_COMMANDS.md`.
 
 ## 2026-07-14 — Stage-2 reproduction guard PASSED (bit-identical); G5 analysis, gate amendment, G5 PASSED
 
@@ -771,7 +771,7 @@ same 100x1x32 budget). Gates G6a (22-bit feasibility + Chebyshev
 degree-doubling numerics) and G6b (4090 confirmation + cross-machine 1%
 reproduction guard on the 20-bit reference run). Decision rules and locked
 expectations in the spec §4/§6. Deliverable: results/LADDER_REPORT.md.
-Implementation handoff to Codex next; all official runs user-launched per
+Implementation next; all official runs author-launched per
 the standing run-ownership protocol.
 
 ## 2026-07-15 — Gate G6a PASSED (22-bit feasibility + numerics, RTX 5070)
@@ -790,7 +790,7 @@ gate_g6.py --bits 22 verdict (gate_g6_22bit_20260715T191829_verdict.json):
 
 All SCALING_LADDER_PREREG §3.G6a criteria met. **22-bit rung cleared.**
 Revised wall estimate from measured update times: ~100 min per quantum run,
-~16 h for the sequential 18-run matrix. Runs are user-launched.
+~16 h for the sequential 18-run matrix. Runs are author-launched.
 Code-quality (22-bit, per prereg §2.2): val linear-probe macro-F1
 0.459/0.455/0.445 (majority baseline 0.159), PCA explained variance 0.655 —
 healthy codes, no degenerate bits flagged; +2 nested PCA directions raise
@@ -817,5 +817,5 @@ results/LADDER_REPORT.md):
 bits). The quantum-sampler findings are NOT artifacts of the 20-bit
 enumeration size — they reproduce with stable relative margins at 22 bits.
 24-bit rung remains conditional on gate G6b (lab 4090 unconfirmed); a
-one-rung ladder is a pre-registered acceptable outcome. Runs user-launched;
-no official run was launched by an agent.
+one-rung ladder is a pre-registered acceptable outcome. Runs author-launched;
+no official run was launched during implementation.

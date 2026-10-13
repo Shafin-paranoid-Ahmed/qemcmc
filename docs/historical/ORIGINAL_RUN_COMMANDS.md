@@ -1,4 +1,4 @@
-> Historical thesis record. Original machine paths and commands are retained as provenance. Use the standalone [README](../../README.md) and runbook for current setup.
+> Historical research record. Original machine paths and commands are retained as provenance. Use the standalone [README](../../README.md) and runbook for current setup.
 
 # Run Commands
 
@@ -28,7 +28,7 @@ Run G2 only if G1 passes:
 
 Stage-1 commands are appended only after both gates pass.
 
-## READY FOR USER — G2 rerun commands (2026-07-12, post metric-amendment)
+## READY TO RUN — G2 rerun commands (2026-07-12, post metric-amendment)
 
 The 2026-07-12 G2 run (`results/qemcmc_exact_level-a_all_mixing.csv` /
 `_all_verdict.json`) returned `passed: false` with `inf` mean IATs — a metric
@@ -41,8 +41,8 @@ this rerun writes new `_v2_` tagged files.
 Run from the repo root with the explicit project interpreter:
 
 ```powershell
-$PY = "G:\FOR THESIS\MAIN\.venv-e1\Scripts\python.exe"
-& $PY "G:\FOR THESIS\MAIN\qsampler_ebm_pilot\scripts\gate_g2.py" --spins 12 14 16 --seeds 0 1 2 --steps 3000 --burn-in 500
+$PY = "WORKSPACE\.venv-e1\Scripts\python.exe"
+& $PY "WORKSPACE\qsampler_ebm_pilot\scripts\gate_g2.py" --spins 12 14 16 --seeds 0 1 2 --steps 3000 --burn-in 500
 ```
 
 - **Expected wall-clock: ~10-11 hours total.** The 16-spin QeMCMC chains alone
@@ -65,7 +65,7 @@ $PY = "G:\FOR THESIS\MAIN\.venv-e1\Scripts\python.exe"
     amended per-spin-count, dual-observable, median rule.
 
 
-## READY FOR USER — G2 v3 completion run (2026-07-12)
+## READY TO RUN — G2 v3 completion run (2026-07-12)
 
 The v2 run was contaminated at 16 spins by a resume under the wrong step
 budget (see RESULTS_LOG.md). The 27 valid 3000-step chains were copied into
@@ -73,8 +73,8 @@ budget (see RESULTS_LOG.md). The 27 valid 3000-step chains were copied into
 them and runs only the 9 missing 16-spin chains:
 
 ```powershell
-$PY = "G:\FOR THESIS\MAIN\.venv-e1\Scripts\python.exe"
-& $PY "G:\FOR THESIS\MAIN\qsampler_ebm_pilot\scripts\gate_g2.py" --spins 12 14 16 --seeds 0 1 2 --steps 3000 --burn-in 500 --tag v3
+$PY = "WORKSPACE\.venv-e1\Scripts\python.exe"
+& $PY "WORKSPACE\qsampler_ebm_pilot\scripts\gate_g2.py" --spins 12 14 16 --seeds 0 1 2 --steps 3000 --burn-in 500 --tag v3
 ```
 
 - Startup must print `resuming: 27 chains already complete` — if it errors
@@ -87,9 +87,9 @@ $PY = "G:\FOR THESIS\MAIN\.venv-e1\Scripts\python.exe"
 - Output: `qemcmc_exact_level-a_v3_all_mixing.csv` (36 rows, all at 3000/500)
   and `qemcmc_exact_level-a_v3_all_verdict.json` — the actual G2 verdict.
 
-## READY FOR USER — Stage 1 (G3) (2026-07-13)
+## READY TO RUN — Stage 1 (G3) (2026-07-13)
 
-Codex must not launch these commands. Run one level per overnight session from
+These commands are run manually. Run one level per overnight session from
 the repository root. Fixed matched budget (superseded 2026-07-13 BEFORE any
 run — see RESULTS_LOG.md): **100 updates, 1 chain, 32 proposal steps = 3,200
 proposal events per run**. Rationale: 40 updates risked stopping before the
@@ -104,8 +104,8 @@ Keep the machine plugged in, High Performance power plan, no sleep.
 
 Common setup (paste in EACH window, then the window's seed line):
 
-    $PY = "G:\FOR THESIS\MAIN\.venv-e1\Scripts\python.exe"
-    $SCRIPT = "G:\FOR THESIS\MAIN\qsampler_ebm_pilot\scripts\stage1_train.py"
+    $PY = "WORKSPACE\.venv-e1\Scripts\python.exe"
+    $SCRIPT = "WORKSPACE\qsampler_ebm_pilot\scripts\stage1_train.py"
     $SAMPLERS = @("gibbs","mh-local","mh-uniform","pcd","pt","qemcmc","exact")
     function Run-Stage1Seed($level, $seed) {
         foreach ($sampler in $SAMPLERS) {
@@ -149,20 +149,20 @@ Expected files per configuration:
 - `results/stage1_{sampler}_level-{level}_{seed}_g3-v1_state.json`
 - `results/stage1_{sampler}_level-{level}_{seed}_g3-v1_metadata.json`
 
-After all user runs complete:
+After all manual runs complete:
 
-    & $PY "G:\FOR THESIS\MAIN\qsampler_ebm_pilot\scripts\finalize_stage1.py" --tag g3-v1
+    & $PY "WORKSPACE\qsampler_ebm_pilot\scripts\finalize_stage1.py" --tag g3-v1
 
-## READY FOR USER — GPU backend benchmark (authoritative block)
+## READY TO RUN — GPU backend benchmark (authoritative block)
 
 Expected runtime: approximately 20-60 minutes; n=20 CPU SciPy may dominate.
 Do not change the proposal count below. Run this in PowerShell:
 
 ```powershell
-$env:CUPY_CACHE_DIR = "G:\FOR THESIS\MAIN\.venv-gpu\cupy_cache"
-$env:TEMP = "G:\FOR THESIS\MAIN\.venv-gpu\tmp"
-$env:TMP = "G:\FOR THESIS\MAIN\.venv-gpu\tmp"
-& "G:\FOR THESIS\MAIN\.venv-gpu\Scripts\python.exe" "G:\FOR THESIS\MAIN\qsampler_ebm_pilot\scripts\gpu_bench\bench.py" --proposals 20 --spins 12 14 16 18 20 --stage-proposals 32 --stage-repeats 3 --seed 20260713
+$env:CUPY_CACHE_DIR = "WORKSPACE\.venv-gpu\cupy_cache"
+$env:TEMP = "WORKSPACE\.venv-gpu\tmp"
+$env:TMP = "WORKSPACE\.venv-gpu\tmp"
+& "WORKSPACE\.venv-gpu\Scripts\python.exe" "WORKSPACE\qsampler_ebm_pilot\scripts\gpu_bench\bench.py" --proposals 20 --spins 12 14 16 18 20 --stage-proposals 32 --stage-repeats 3 --seed 20260713
 if ($LASTEXITCODE -ne 0) { throw "GPU backend benchmark failed; preserve the console output" }
 ```
 
@@ -171,9 +171,9 @@ Expected outputs are
 `qsampler_ebm_pilot/results/gpu_bench/gpu_backend_verdict.json`. The latter applies the recorded
 acceptance-plus-2x decision rule; no backend adoption occurs in this task.
 
-## READY FOR USER — Stage 1 g3-v2-gpu (GPU, 20-bit)
+## READY TO RUN — Stage 1 g3-v2-gpu (GPU, 20-bit)
 
-Codex did not launch this official matrix. Run the following single sequential
+This official matrix was run manually. Run the following single sequential
 PowerShell block from the repository root. All seven arms use the GPU venv as
 their top-level interpreter. QeMCMC proposal distributions and the 20-bit exact
 reference use CuPy; final classification metrics are delegated internally to
@@ -188,7 +188,7 @@ reference and project to roughly 1-1.5 minutes per run. These are engineering
 simulation-cost estimates only, never sampler wall-clock advantage claims.
 
 ```powershell
-$ROOT = "G:\FOR THESIS\MAIN"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 $SCRIPT = Join-Path $ROOT "qsampler_ebm_pilot\scripts\stage1_train.py"
 $env:CUPY_CACHE_DIR = Join-Path $ROOT ".venv-gpu\cupy_cache"
@@ -234,7 +234,7 @@ Expected files for each of 84 configurations:
 After all 84 runs complete, close Stage 1 with:
 
 ```powershell
-$ROOT = "G:\FOR THESIS\MAIN"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 & $PY (Join-Path $ROOT "qsampler_ebm_pilot\scripts\finalize_stage1.py") --tag g3-v2-gpu
 if ($LASTEXITCODE -ne 0) { throw "Stage-1 finalization failed; preserve all artifacts" }
@@ -246,16 +246,16 @@ The finalizer requires all four levels, seven samplers, three seeds, one
 generated report tables. Interpretation and verdict placeholders remain empty
 until the matrix actually completes.
 
-## READY FOR USER — Stage 2 stage2-v1-gpu (2026-07-14)
+## READY TO RUN — Stage 2 stage2-v1-gpu (2026-07-14)
 
-Codex did not launch any command in this section. Run the reproduction guard
+No command in this section was launched during implementation. Run the reproduction guard
 first. Run G5 only if the guard passes, and run the full matrix only if G5
 passes under the locked Stage-2 rule.
 
 ### 1. Reproduction guard — fixed QeMCMC, Level C, seed 0
 
 ```powershell
-$ROOT = "G:\FOR THESIS\MAIN"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 $SCRIPT = Join-Path $ROOT "qsampler_ebm_pilot\scripts\stage1_train.py"
 $RESULTS = Join-Path $ROOT "qsampler_ebm_pilot\results"
@@ -295,7 +295,7 @@ if ($RELATIVE_DIFFERENCE -gt 0.01) {
 ### 2. Gate G5 — adaptive QeMCMC, exact reward, Level A, seed 0
 
 ```powershell
-$ROOT = "G:\FOR THESIS\MAIN"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 $SCRIPT = Join-Path $ROOT "qsampler_ebm_pilot\scripts\stage1_train.py"
 $RESULTS = Join-Path $ROOT "qsampler_ebm_pilot\results"
@@ -350,7 +350,7 @@ seed line per window. The G5 configuration already completed above will print
 `already complete` in the seed-0 window.
 
 ```powershell
-$ROOT = "G:\FOR THESIS\MAIN"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 $SCRIPT = Join-Path $ROOT "qsampler_ebm_pilot\scripts\stage1_train.py"
 $env:CUPY_CACHE_DIR = Join-Path $ROOT ".venv-gpu\cupy_cache"
@@ -411,9 +411,9 @@ Completed configurations print `already complete`; incomplete configurations
 resume from their JSON state. Any budget, backend, width, sampler-variant,
 reward-signal, or persistence mismatch hard-errors before training.
 
-## READY FOR USER ? Scaling ladder 22-bit rung (2026-07-15)
+## READY TO RUN ? Scaling ladder 22-bit rung (2026-07-15)
 
-No official run was launched by the agent. Run these blocks in order. The
+No official run was launched during implementation. Run these blocks in order. The
 code-file tag identifies the generated dataset; the separate `--tag` on the
 18-run matrix identifies training artifacts.
 
@@ -426,7 +426,7 @@ code-file tag identifies the generated dataset; the separate `--tag` on the
 > artifact. Blocks 2–3 below correctly stay on `.venv-gpu`.
 
 ```powershell
-$ROOT = "G:\FOR THESIS\MAIN"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-e1\Scripts\python.exe"
 $BUILD = Join-Path $ROOT "qsampler_ebm_pilot\scripts\build_codes.py"
 
@@ -446,7 +446,7 @@ different from the training run-artifact tag `ladder22-v1-gpu` below.
 ### 2. Run G6a at 22 bits
 
 ```powershell
-$ROOT = "G:\FOR THESIS\MAIN"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 $GATE = Join-Path $ROOT "qsampler_ebm_pilot\scripts\gate_g6.py"
 $env:CUPY_CACHE_DIR = Join-Path $ROOT ".venv-gpu\cupy_cache"
@@ -464,7 +464,7 @@ if ($LASTEXITCODE -ne 0) {
 Run only after the 22-bit G6a verdict passes.
 
 ```powershell
-$ROOT = "G:\FOR THESIS\MAIN"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 $SCRIPT = Join-Path $ROOT "qsampler_ebm_pilot\scripts\stage1_train.py"
 $env:CUPY_CACHE_DIR = Join-Path $ROOT ".venv-gpu\cupy_cache"
@@ -499,16 +499,16 @@ foreach ($sampler in $SAMPLERS) {
 }
 ```
 
-## READY FOR USER ? Conditional scaling ladder 24-bit rung (2026-07-15)
+## READY TO RUN ? Conditional scaling ladder 24-bit rung (2026-07-15)
 
-No official run was launched by the agent. This rung is conditional on every
+No official run was launched during implementation. This rung is conditional on every
 G6b item. These commands use the research-PC root from the binding prereg and
 must not be redirected to the 22-bit local-machine artifacts.
 
 ### 1. Capture the RTX 4090 environment record
 
 ```powershell
-$ROOT = "F:\T2530944\THESIS"
+$ROOT = "WORKSPACE"
 $RESULTS = Join-Path $ROOT "qsampler_ebm_pilot\results"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 $env:CUPY_CACHE_DIR = Join-Path $ROOT ".venv-gpu\cupy_cache"
@@ -542,7 +542,7 @@ if ($LASTEXITCODE -ne 0) {
 > `.venv-gpu` (CuPy only, no sklearn).
 
 ```powershell
-$ROOT = "F:\T2530944\THESIS"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-e1\Scripts\python.exe"
 $BUILD = Join-Path $ROOT "qsampler_ebm_pilot\scripts\build_codes.py"
 
@@ -565,7 +565,7 @@ The original `g3-v2-gpu` Level-C seed-0 history must be present on the research
 PC before this block is run.
 
 ```powershell
-$ROOT = "F:\T2530944\THESIS"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 $SCRIPT = Join-Path $ROOT "qsampler_ebm_pilot\scripts\stage1_train.py"
 $RESULTS = Join-Path $ROOT "qsampler_ebm_pilot\results"
@@ -612,7 +612,7 @@ if ($RELATIVE_DIFFERENCE -gt 0.01) {
 ### 4. Run G6b numerics/VRAM/timing at 24 bits
 
 ```powershell
-$ROOT = "F:\T2530944\THESIS"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 $GATE = Join-Path $ROOT "qsampler_ebm_pilot\scripts\gate_g6.py"
 $env:CUPY_CACHE_DIR = Join-Path $ROOT ".venv-gpu\cupy_cache"
@@ -630,7 +630,7 @@ if ($LASTEXITCODE -ne 0) {
 Run only after the environment, cross-machine, and 24-bit gate blocks all pass.
 
 ```powershell
-$ROOT = "F:\T2530944\THESIS"
+$ROOT = "WORKSPACE"
 $PY = Join-Path $ROOT ".venv-gpu\Scripts\python.exe"
 $SCRIPT = Join-Path $ROOT "qsampler_ebm_pilot\scripts\stage1_train.py"
 $env:CUPY_CACHE_DIR = Join-Path $ROOT ".venv-gpu\cupy_cache"

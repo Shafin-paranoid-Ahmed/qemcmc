@@ -139,10 +139,10 @@ What the controller learned:
   under any outcome, per the hard don'ts.
 - Per-proposal-step quality on a simulator; no wall-clock or
   quantum-advantage claims.
-- The thesis invention (online gradient-error-driven adaptation) is
+- The project invention (online gradient-error-driven adaptation) is
   demonstrated as a working mechanism with lossless proxy transfer, but at
   this budget it is NOT the component that moves gradient error —
-  persistence is. Both facts go in the thesis; the second is what makes
+  persistence is. Both facts go in the project; the second is what makes
   the first honest.
 
 ## Verdict vs pre-registered expectations (spec §7)
